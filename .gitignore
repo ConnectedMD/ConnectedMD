@@ -29,6 +29,7 @@ bld
 node_modules
 bower_components
 plugins
+xxConnectedMD\www\lib
 
 # Optional npm cache directory
 .npm
