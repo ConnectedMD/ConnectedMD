@@ -1,0 +1,25 @@
+{
+  "name": "BlankCordovaApp1",
+  "dependencies": {
+    "react": "",
+    "react-router": "",
+    "flux": "",
+    "ratchet": ""
+  },
+  "exportsOverride": {
+    "react": {
+      "js": "*.js"
+    },
+    "react-router": {
+      "js":  "build/umd/*.js"
+    },
+    "flux": {
+      "js":  "dist/*.js"
+    },
+    "*": {
+      "js": "dist/js/*.js",
+      "css": "dist/css/*.css",
+      "fonts": "dist/fonts/*"
+    }
+  }
+}
