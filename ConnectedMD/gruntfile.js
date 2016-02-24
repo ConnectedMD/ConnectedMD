@@ -69,6 +69,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks("grunt-typescript");
     grunt.loadNpmTasks("grunt-contrib-watch");
 
+    grunt.registerTask('update', ['bower:install', 'tsd:refresh']);
     grunt.registerTask('init-project', ['bower:install', 'tsd:refresh', 'watch']);
     grunt.registerTask('build', ['typescript'])
 };
