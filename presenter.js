@@ -38,8 +38,7 @@ exports.presenter = function (processRequest, processResponse, siteCache, etagCa
 		var token = getCookie("TOKEN");
 		if (token === "0" || token === null || token === "") {
 			console.log("LOGIN", token, relativePath);
-			//relativePath = "login-static/login.html";
-			relativePath = "index.html";
+			relativePath = "login-static/login.html";
 		} else {
 			console.log("APP", token, relativePath);
 			relativePath = "index.html";	

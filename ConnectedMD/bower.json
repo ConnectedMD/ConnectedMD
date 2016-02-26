@@ -4,7 +4,8 @@
     "react": "",
     "react-router": "",
     "flux": "",
-    "ratchet": ""
+    "ratchet": "",
+    "bootstrap":""
   },
   "exportsOverride": {
     "react": {

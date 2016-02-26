@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="<%=LANG%>">
+   <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link rel="icon" type="image/ico" href="/favicon.ico"/>
+      <title>Log in</title>
+      <link href="/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+      <link href="/libs/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
+    <script src="/libs/bootstrap/js/bootstrap.min.js"></script>
+   </head>
+   <body>
+      <div class="header row" style="position:fixed;width:100%;z-index:999;">
+         <img src="/content/logo.png" class="logo"/>
+      </div>
+      <div style="height:40px;"></div>
+        
+      <div id="login" class="container">
+         <div id="loginPanel" class="row center-block">
+            <div class="panel panel-primary col-lg-6" style="padding:0;">
+               <div class="panel-heading">Use Your Account</div>
+               <div class="panel-body">
+                  <div class="form-group">
+                     <label for="email">Email Address</label>
+                     <input class="form-control" id="email" name="email" type="email" placeholder="email" />
+                     <span id="emailError" class="errmsg"></span>
+                  </div>
+                  <div class="form-group">
+                     <label for="password">Password</label>
+                     <input class="form-control" id="password" name="password" type="password" placeholder="password" />
+                     <span id="passwordError" class="errmsg"></span>
+                     <span class="capsLockMsg"></span>
+                  </div>
+                  <span id="loginError" class="errmsg"></span>
+                  <button class="btn btn-primary pull-right" onclick="login()">Log In</button>
+               </div>
+               <div class="panel-footer">
+                  <div style="height:35px;">
+                     <div class="pull-left">
+                        <label>Remember me</label>
+                        <input checked="checked" id="rememberMe" name="rememberMe" type="checkbox" value="true" style="vertical-align:baseline;" />
+                     </div>
+                     <a href="javascript:show('forgotPassword')" class="pull-right">Forgot Password?</a>
+                  </div>
+                  <div style="text-align:center;">
+                     Don't have an account? <a href="javascript:show('register')"><span>Sign Up!</span> </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div id="register" class="container" style="display:none;">
+         <div id="loginPanel" class="row center-block">
+            <div class="panel panel-success col-lg-6" style="padding:0;">
+               <div class="panel-heading">Sign Up</div>
+               <div class="panel-body">
+                  <div class="form-group">
+                     <label for="registerEmail">Email Address</label>
+                     <input class="form-control" id="registerEmail" name="registerEmail" type="email" placeholder="email" />
+                     <span class="errmsg"></span>
+                  </div>
+                  <div class="form-group">
+                     <label for="registerFirstName">First Name</label>
+                     <input class="form-control" id="registerFirstName" name="registerFirstName" type="text" placeholder="First Name" />
+                     <span class="errmsg"></span>
+                  </div>
+                  <div class="form-group">
+                     <label for="registerLastName">Last Name</label>
+                     <input class="form-control" id="registerLastName" name="registerLastName" type="text" placeholder="Last Name" />
+                     <span class="errmsg"></span>
+                  </div>
+                  <div class="form-group">
+                     <label for="registerPassword">Password</label>
+                     <input class="form-control" id="registerPassword" name="registerPassword" type="password" placeholder="password" />
+                     <span class="capsLockMsg"></span>
+                  </div>
+                  <div class="form-group">
+                     <label for="registerConfirmPassword">Confirm Password</label>
+                     <input class="form-control" id="registerConfirmPassword" name="registerConfirmPassword" type="password" placeholder="confirm password" />
+                     <span class="capsLockMsg"></span>
+                  </div>
+                  <span id="registerError" class="errmsg"></span>
+                  <button class="btn btn-success pull-right" onclick="register()">Sign Up</button>
+               </div>
+               <div class="panel-footer">
+                  <div style="height:35px;">
+                     <a href="javascript:show('login')" class="pull-left">Login</a>
+                     <a href="javascript:show('forgotPassword')" class="pull-right">Forgot Password?</a>
+                  </div>
+                  <div style="text-align:center;">
+                     Don't have an account? <a href="javascript:show('register')"><span>Sign Up!</span> </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div id="forgotPassword" class="container" style="display:none;">
+         <div id="loginPanel" class="row center-block">
+            <div class="panel panel-warning col-lg-6" style="padding:0;">
+               <div class="panel-heading">Forgot Password</div>
+               <div class="panel-body">
+                  <div class="form-group">
+                     <label for="forgotPassword">Email Address</label>
+                     <input class="form-control" id="forgotPasswordEmail" name="forgotPasswordEmail" type="email" placeholder="email" onclick="$('#forgotPassword .errmsg').html('');"/>
+                     <span class="errmsg"></span>
+                  </div>
+                  <button class="btn btn-warning pull-right" onclick="forgotPassword()">Send</button>
+               </div>
+               <div class="panel-footer">
+                  <div style="height:35px;">
+                     <a href="javascript:show('login')" class="pull-left">Login</a>
+                  </div>
+                  <div style="text-align:center;">
+                     Don't have an account? <a href="javascript:show('register')"><span>Sign Up!</span> </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div id="changePassword" class="container" style="display:none;">
+         <div id="loginPanel" class="row center-block">
+            <div class="panel panel-warning col-lg-6" style="padding:0;">
+               <div class="panel-heading">Reset Password</div>
+               <div class="panel-body">
+                  <div class="form-group">
+                     <label for="changeNewPassword">New Password</label>
+                     <input class="form-control" id="changeNewPassword" name="changeNewPassword" type="password" placeholder="password" />
+                     <span class="capsLockMsg"></span>
+                  </div>
+                  <div class="form-group">
+                     <label for="changeConfirmPassword">Confirm Password</label>
+                     <input class="form-control" id="changeConfirmPassword" name="changeConfirmPassword" type="password" placeholder="confirm password" />
+                     <span class="capsLockMsg"></span>
+                  </div>
+                  <span id="changePasswordError" class="errmsg"></span>
+                  <button class="btn btn-warning pull-right" onclick="changePassword()">Change Password</button>
+               </div>
+            </div>
+         </div>
+      </div>
+        
+      <div id="footer" class="container">
+         <div class="row">
+            <div class="row center-block" style="margin-top:20px;text-align:center;">
+               &copy; Copyright 2016 | ConnectedMD | 
+               <a href="/Content/terms-of-service.html" target="_blank" style="color:#000;text-decoration:none;">Terms</a> | 
+               <a href="/Content/privacy-policy.html" target="_blank" style="color:#000;text-decoration:none;">Privacy</a>
+            </div>
+         </div>
+      </div>
+<script>
+$("#email, #password").keypress(function (event) {
+   if (event.which == 13) { login(); }
+});
+baseAPI = "<%=API%>";
+createCookie("TOKEN", "", -1);
+$("#password").on("keypress click focus blur", function (e) { checkCapsLock(e, $("#login .capsLockMsg")); });
+$("#registerPassword").on("keypress click focus blur", function (e) { checkCapsLock(e, $("#register .capsLockMsg")); });
+$("#registerConfirmPassword").on("keypress click focus blur", function (e) { checkCapsLock(e, $("#register .capsLockMsg")); });
+
+var checkCapsLock = function (e, m) {
+   m.html("");
+   var ev = e ? e : window.event;
+   if (!ev) { alert(e); return; }
+   var targ = ev.target ? ev.target : ev.srcElement;
+   // get key pressed
+   var which = -1;
+   if (ev.which) {
+      which = ev.which;
+   } else if (ev.keyCode) {
+      which = ev.keyCode;
+   }
+   // get shift status
+   var shift_status = false;
+   if (ev.shiftKey) {
+      shift_status = ev.shiftKey;
+   } else if (ev.modifiers) {
+      shift_status = !!(ev.modifiers & 4);
+   }
+   // Upper Case letter input
+   if(which >= 65 && which < 90) {
+      if (!shift_status) {
+         // Shift is not being pressed, turn the message on
+         m.html("Caps Lock is on");
+      }
+   }
+   // Lower Case letter input
+   else if(which >= 97 && which <= 122) {
+      if(shift_status){
+         // Shift is being pressed, turn the message on
+         m.html("Caps Lock is on");
+      }
+   }
+};
+var show = function (panel) {
+   $("#login").hide();
+   $("#register").hide();
+   $("#forgotPassword").hide();
+   $("#changePassword").hide();
+   $("#"+panel).show("fast");
+};
+var login = function () {
+   $("#loginError").html("");
+   $("#emailError").html("");
+   $("#passwordError").html("");
+   var ok = true;
+   if (!validateEmail($("#email").val())) { ok = false; $("#emailError").html("Invalid Email Address."); }
+   if ($("#password").val().length <= 3) { ok = false; $("#passwordError").html("Password Required."); }
+   if (ok) {
+      $.ajax({crossDomain: true, dataType: "json", method: "POST", url: baseAPI + "login", data: { "email": $("#email").val(), "password": $("#password").val() } })
+         .error(function(result) {
+            if (result.responseJSON) {
+               if (result.responseJSON.error) {
+                  $("#loginError").html(result.responseJSON.error);
+               } else {
+                  $("#loginError").html(result.responseText);
+               }
+            } else {
+               $("#loginError").html("Email or Password Invalid.");
+            }
+         })
+         .done(function(data) {
+            if (data.error) {
+               $("#loginError").html(data.error);
+            } else if (data.token !== null && data.token !== "") {
+               createCookie("TOKEN", data.token, 1);
+               document.location.href = "/";
+            } else {
+               $("#loginError").html("Token Invalid.");
+            }
+         })
+      ;
+   }
+};
+
+var forgotPassword = function () {
+   if (validateEmail($("#forgotPasswordEmail").val()) ) {
+      $.ajax({crossDomain: true, dataType: "json", method: "POST", url: baseAPI + "forgotPassword", data: { "email": $("#forgotPasswordEmail").val() } })
+         .error(function(result) {
+            console.log(result.responseJSON);
+            $(".errorMsg").html("");
+         })
+         .done(function(data) {
+            console.log(data);
+         })
+      ;
+   } else {
+      $("#forgotPassword .errmsg").html("Invalid Email Address");
+   }
+}
+
+var register = function() {
+      $("#registerError").html("");
+      var ok = true;
+      var registerEmail = $("#registerEmail").val();
+      var registerFirstName = $("#registerFirstName").val();
+      var registerLastName = $("#registerLastName").val();
+      var registerPassword = $("#registerPassword").val();
+      var registerConfirmPassword = $("#registerConfirmPassword").val();
+      if (registerPassword !== registerConfirmPassword) { ok = false; }
+      if (!validateEmail(registerEmail)) { ok = false; }
+      if (registerFirstName.length <= 1) { ok = false; }
+      if (registerFirstName.length <= 1) { ok = false; }
+      if (ok) {
+         $.ajax({crossDomain: true, dataType: "json", method: "POST", url: baseAPI + "signup", 
+            data: {
+                  "email": registerEmail,
+                  "firstname": registerFirstName, 
+                  "lastname": registerLastName, 
+                  "password": registerPassword,
+                  "confirmPassword": registerConfirmPassword
+            }})
+            .error(function(result) {
+                  console.log(result);
+                  $("#registerError").html("Sigup Failed with error");
+            })
+            .done(function(data) {
+                  if (data.error) {
+                     $("#registerError").html(data.error);
+                  } else {
+                     if (data.accountCreated === "true") {
+                        alert("Signup Complete.\nProceed to login.");
+                        document.location.href = "/";
+                     }
+                     $("#registerError").html("Sigup Failed");
+                  }
+            })
+         ;
+      } else {
+         $("#registerError").html("All fields required.");
+      }
+};
+var changePassword = function () {
+      ok = true;
+      var changeNewPassword = $("#changeNewPassword").val();
+      var changeConfirmPassword = $("#changeConfirmPassword").val();
+      if (changeNewPassword == "") { ok = false; }
+      if (changeConfirmPassword == "") { ok = false; }
+      if (changeNewPassword !== changeConfirmPassword) { ok = false; }
+      if (ok) {
+         $.ajax({crossDomain: true, dataType: "json", method: "POST", url: baseAPI + "updatePassword", 
+            data: {
+                  "token": getUrlParameter("token"),
+                  "password": changeNewPassword
+            }})
+            .error(function(result) {
+                  console.log(result.responseJSON);
+                  $("#changePasswordError").html("Error Resetting Password");
+            })
+            .done(function(data) {
+                  console.log(data);
+                  if (data.error) {
+                     $("#changePasswordError").html(data.error);
+                  } else {
+                     alert("Password changed.");
+                     document.location.href = "/";
+                  }
+            })
+         ;
+      } else {
+         $("#changePasswordError").html("Password does not match");
+      }
+};
+var validateEmail = function(email) {
+   if (email.length == 0) return false;
+   var regex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/i;
+   return regex.test(email);
+};
+var getUrlParameter = function getUrlParameter(sParam) {
+   var sPageURL = decodeURIComponent(window.location.search.substring(1)), sURLVariables = sPageURL.split('&'), sParameterName, i;
+   for (i = 0; i < sURLVariables.length; i++) {
+      sParameterName = sURLVariables[i].split('=');
+      if (sParameterName[0] === sParam) {
+         return sParameterName[1] === undefined ? true : sParameterName[1];
+      }
+   }
+};
+if (getUrlParameter("token") != undefined) { show("changePassword"); }
+</script>
+</body>
+</html>
