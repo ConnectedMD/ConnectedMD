@@ -24,7 +24,7 @@
             to bottom,
             rgba(129,119,157, 0.85),
             rgba(75,70,92, 1)
-    ),url('../img/farm-bg.jpg') no-repeat center center fixed;
+    ),url('/images/farm-bg.jpg') no-repeat center center fixed;
     -webkit-filter: blur(2px);
     filter: blur(2px);
 }
