@@ -1,0 +1,386 @@
+/* -----------------------------------------------
+ * Login
+ * ---------------------------------------------*/
+.login-body{
+    background-color: #59526C;
+}
+
+.login-view{
+    height: 100vh;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-view .login-view-overlay{
+    position: fixed !important;
+    top:0;
+    left:0;
+    height: 100%;
+    width:100%;
+    background-size: cover;
+    background:linear-gradient(
+            to bottom,
+            rgba(129,119,157, 0.85),
+            rgba(75,70,92, 1)
+    ),url('../img/farm-bg.jpg') no-repeat center center fixed;
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+}
+
+.login-container{
+    height:100%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+}
+
+.login-container .login-brand-container{
+    /*height: 30vh;*/
+    display: flex;
+    justify-content: center;
+}
+
+.login-social{
+    z-index:1;
+    display:flex;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    justify-content: center;
+    margin-top:20px;
+    justify-content:center;
+    align-content:space-between;
+}
+
+.login-social .login-social-btn{
+    border:2px solid #b1b1b1;
+    padding:10px;
+    text-align:center;
+    width:58px;
+    border-radius:60px;
+    cursor:pointer;
+    margin:0 5px;
+}
+
+.login-social .login-social-btn .login-icon{
+    color:#b1b1b1;
+    font-size:3rem;
+}
+
+.login-option{
+    text-align:center; z-index:1; color:#b1b1b1; padding-top:20px; font-size:1.75rem;
+}
+
+.login-brand{
+    color: #f1f1f1;
+}
+
+.login-brand-subtext{
+    color: #d0d0d0;
+    text-transform: none;
+    font-weight:300;
+}
+
+.login-feature-icon{
+    color: #a5a5a5;
+    font-size:2.5rem;
+}
+
+.login-form{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top:20px;
+}
+
+.login-form .row{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.login-input{
+    background-color:transparent !important;
+    border: 1px solid #E3E3E3;
+    color: #fafafa !important;
+}
+
+.login-trademark{
+    bottom:0;
+    position: absolute;
+    margin-bottom:20px;
+    width:100%;
+    text-align:center;
+}
+
+.login-btn{
+    border-color:#9268D7 !important;
+    background-color: #9268D7 !important;
+    color: #f1f1f1;
+    box-shadow: 0 29px 32px -20px rgba(0,0,0,0.5),0 4px 11px -3px rgba(0,0,0,0.25);
+}
+
+.login-btn:hover{
+    color: #ffffff;
+}
+
+.signup-footer{
+    bottom:0;
+    position: absolute;
+    margin-bottom:60px;
+    width:100%;
+    text-align:center;
+}
+
+.signup-footer .signup-message{
+    text-transform:none;
+    font-weight:300;
+    color: #868686;
+    font-size:1.5rem;
+}
+
+.signup-footer .sign-up-link{
+    text-transform:none;
+    font-weight:500;
+    color: #fafafa;
+    font-size:1.75rem;
+    cursor:pointer;
+}
+
+@media (min-width: 1200px){
+    .login-form {
+        width: 1170px;
+    }
+}
+@media (min-width: 992px){
+    .login-form {
+        width: 970px;
+    }
+}
+@media (min-width: 768px) {
+    .login-form {
+        width: 750px;
+    }
+}
+
+
+/* ---------------------------------------------
+ *    Sign Up
+ * -------------------------------------------*/
+
+.signup-view{
+    min-height:100%;
+    background-color: #4e4960;
+}
+
+.signup-prompt{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:10px 0 20px 0;
+    color: #f1f1f1;
+    text-align:center;
+}
+
+.signup-prompt .signup-subtext{
+    text-transform:none; color: #C5C5C5;
+}
+
+.signup-social{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    background-color: #3e3b4b;
+    padding:30px 20px !important;
+}
+
+.signup-btn-social{
+    width:100%;
+    max-width:600px;
+}
+
+.signup-form{
+    width:100%;
+    max-width:600px;
+    padding:40px 0;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.signup-form .signup-input-box{
+    margin-bottom:40px;
+}
+
+.signup-form .signup-input-box .signup-input{
+    background-color: transparent !important;
+    border: none;
+    border-bottom: 1px solid #5E5B7B;
+    color: #fafafa !important;
+    border-radius: 0px;
+}
+
+.signup-form .signup-submit-box{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    padding:20px 20px;
+}
+.signup-form .signup-submit-box .signup-btn-submit{
+    background-color: #8664C1;
+    border: 1px solid #8664C1;
+    box-shadow: 0 4px 10px 1px #444152;
+}
+
+.signup-form .signup-terms-box{
+    width:100%;
+    text-align:center;
+    color: #8C83A2;
+}
+
+.signup-form .signup-terms-box .signup-terms-link{
+    color: #C365C3;
+}
+
+.signup-input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #909090;
+}
+
+.signup-input::-moz-placeholder{
+    color: #909090;
+}
+
+.signup-input:-ms-input-placeholder {
+    color: #909090;
+}
+
+.signup-input:-moz-placeholder {
+    color: #909090;
+}
+
+/* media layout overrides */
+.mediaTest {position:absolute;top:0px;left:0px;}
+.mediaTest span {padding:4px;color:white;background-color:maroon;}
+
+@media only screen and (max-width:1920px) {
+    .screenDev {display:none;}
+    .screen1920px {display:block;}
+}
+@media only screen and (max-width:1600px) {
+    .screenDev {display:none;}
+    .screen1600px {display:block;}
+}
+@media only screen and (max-width:1366px) {
+    .screenDev {display:none;}
+    .screen1366px {display:block;}
+}
+@media only screen and (max-width:1360px) {
+    .screenDev {display:none;}
+    .screen1360px {display:block;}
+}
+@media only screen and (max-width:1280px) {
+    .screenDev {display:none;}
+    .screen1280px {display:block;}
+}
+@media only screen and (max-width:1200px) {
+    .screenDev {display:none;}
+    .screen1200px {display:block;}
+}
+@media only screen and (max-width:1024px) {
+    .screenDev {display:none;}
+    .screen1024px {display:block;}
+    .logo {height:3em;}
+    #uploadPanel .actions button {padding-left:58px;padding-right:58px;}
+}
+@media only screen and (max-width:906px) {
+    .screenDev {display:none;}
+    .screen906px {display:block;}
+}
+@media only screen and (max-width:800px) {
+    .screenDev {display:none;}
+    .screen800px {display:block;}
+}
+@media only screen and (max-width:769px) {
+    .screenDev {display:none;}
+    .screen769px {display:block;}
+}
+@media only screen and (max-width:768px) {
+    .screenDev {display:none;}
+    .screen768px {display:block;}
+    .logo {height:2em;}
+    .header #appHeader>button {font-size:.8em;}
+    #uploadPanel .actions button {padding-left:38px;padding-right:38px;}
+}
+@media only screen and (max-width:767px) {
+    .screenDev {display:none;}
+    .screen767px {display:block;}
+    ul.timeline:before {left: 40px;}
+    ul.timeline > li > .timeline-panel {width: calc(100% - 90px);width: -moz-calc(100% - 90px);width: -webkit-calc(100% - 90px);}
+    ul.timeline > li > .timeline-badge {left: 15px;margin-left: 0;top: 16px;}
+    ul.timeline > li > .timeline-panel {float: right;}
+    ul.timeline > li > .timeline-panel:before {border-left-width: 0;border-right-width: 15px;left: -15px;right: auto;}
+    ul.timeline > li > .timeline-panel:after {border-left-width: 0;border-right-width: 14px;left: -14px;right: auto;}
+}
+@media only screen and (max-width:736px) {
+    .screenDev {display:none;}
+    .screen736px {display:block;}
+}
+@media only screen and (max-width:667px) {
+    .screenDev {display:none;}
+    .screen667px {display:block;}
+}
+@media only screen and (max-width:640px) {
+    .screenDev {display:none;}
+    .screen640px {display:block;}
+    .logo {display:none;}
+    .header #appHeader>button {font-size:.7em;}
+    #dashboard .pageButtonHeader button {font-size:.8em !important; padding:3px;}
+}
+@media only screen and (max-width:601px) {
+    .screenDev {display:none;}
+    .screen601px {display:block;}
+}
+@media only screen and (max-width:568px) {
+    .screenDev {display:none;}
+    .screen568px {display:block;}
+}
+@media only screen and (max-width:480px) {
+    .screenDev {display:none;}
+    .screen480px {display:block;}
+    .logo {display:none;}
+    .header #appHeader>button {font-size:.6em;}
+    #dashboard .pageButtonHeader button {font-size:.7em !important; padding:3px;}
+}
+@media only screen and (max-width:414px) {
+    .screenDev {display:none;}
+    .screen414px {display:block;}
+}
+@media only screen and (max-width:380px) {
+    .screenDev {display:none;}
+    .screen380px {display:block;}
+    .logo {display:none;}
+    .header #appHeader>button {font-size:.4em;}
+    #dashboard .pageButtonHeader button {font-size:.65em !important; padding:3px;}
+}
+@media only screen and (max-width:375px) {
+    .screenDev {display:none;}
+    .screen375px {display:block;}
+}
+@media only screen and (max-width:360px) {
+    .screenDev {display:none;}
+    .screen360px {display:block;}
+    #dashboard #folders .panel .panel-body .panel {width:90px;padding:0;float:left;}
+}
+@media only screen and (max-width:320px) {
+    .screenDev {display:none;}
+    .screen320px {display:block;}
+    .logo {display:none;}
+    .header #appHeader>button {font-size:.3em !important;}
+    #dashboard .pageButtonHeader button {font-size:.5em !important; padding:3px;}
+    #dashboard #folders .panel {margin:0 0 15px 0;min-width:270px;}
+    #dashboard #folders .btn-circle {border-radius:28px;box-shadow:0px 2px 5px #ccc;padding:4px 6px 4px 6px}
+    #dashboard #folders .btn-circle span {font-size:1.1em;}
+}

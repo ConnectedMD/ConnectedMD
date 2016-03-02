@@ -8,150 +8,64 @@
       <title>Log in</title>
       <link href="/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
       <link href="/libs/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
+      <link href="/css/animate.min.css" rel="stylesheet"/>
+      <link href="/css/features.css" rel="stylesheet"/>
+      <link href="/css/app.css" rel="stylesheet"/>
     <script src="/libs/bootstrap/js/bootstrap.min.js"></script>
    </head>
-   <body>
-      <div class="header row" style="position:fixed;width:100%;z-index:999;">
-         <img src="/content/logo.png" class="logo"/>
-      </div>
-      <div style="height:40px;"></div>
-        
-      <div id="login" class="container">
-         <div id="loginPanel" class="row center-block">
-            <div class="panel panel-primary col-lg-6" style="padding:0;">
-               <div class="panel-heading">Use Your Account</div>
-               <div class="panel-body">
-                  <div class="form-group">
-                     <label for="email">Email Address</label>
-                     <input class="form-control" id="email" name="email" type="email" placeholder="email" />
-                     <span id="emailError" class="errmsg"></span>
-                  </div>
-                  <div class="form-group">
-                     <label for="password">Password</label>
-                     <input class="form-control" id="password" name="password" type="password" placeholder="password" />
-                     <span id="passwordError" class="errmsg"></span>
-                     <span class="capsLockMsg"></span>
-                  </div>
-                  <span id="loginError" class="errmsg"></span>
-                  <button class="btn btn-primary pull-right" onclick="login()">Log In</button>
-               </div>
-               <div class="panel-footer">
-                  <div style="height:35px;">
-                     <div class="pull-left">
-                        <label>Remember me</label>
-                        <input checked="checked" id="rememberMe" name="rememberMe" type="checkbox" value="true" style="vertical-align:baseline;" />
-                     </div>
-                     <a href="javascript:show('forgotPassword')" class="pull-right">Forgot Password?</a>
-                  </div>
-                  <div style="text-align:center;">
-                     Don't have an account? <a href="javascript:show('register')"><span>Sign Up!</span> </a>
-                  </div>
-               </div>
+<body class="login-body">
+    <div class="login-view">
+        <div class="login-view-overlay"></div>
+        <div class="login-container">
+            <div class="login-brand-container">
+                <div class="row">
+                    <div class="col-md-12" style="text-align: center;">
+                        <h1 class="login-brand"><i class="pe-7s-plugin"></i></h1>
+                        <h1 class="login-brand">
+                            Minerva</h1>
+                        <hr />
+                        <h6 class="login-brand-subtext center-block">Feel better &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;Live better</h6>
+                    </div>
+                </div>
             </div>
-         </div>
-      </div>
-
-      <div id="register" class="container" style="display:none;">
-         <div id="loginPanel" class="row center-block">
-            <div class="panel panel-success col-lg-6" style="padding:0;">
-               <div class="panel-heading">Sign Up</div>
-               <div class="panel-body">
-                  <div class="form-group">
-                     <label for="registerEmail">Email Address</label>
-                     <input class="form-control" id="registerEmail" name="registerEmail" type="email" placeholder="email" />
-                     <span class="errmsg"></span>
-                  </div>
-                  <div class="form-group">
-                     <label for="registerFirstName">First Name</label>
-                     <input class="form-control" id="registerFirstName" name="registerFirstName" type="text" placeholder="First Name" />
-                     <span class="errmsg"></span>
-                  </div>
-                  <div class="form-group">
-                     <label for="registerLastName">Last Name</label>
-                     <input class="form-control" id="registerLastName" name="registerLastName" type="text" placeholder="Last Name" />
-                     <span class="errmsg"></span>
-                  </div>
-                  <div class="form-group">
-                     <label for="registerPassword">Password</label>
-                     <input class="form-control" id="registerPassword" name="registerPassword" type="password" placeholder="password" />
-                     <span class="capsLockMsg"></span>
-                  </div>
-                  <div class="form-group">
-                     <label for="registerConfirmPassword">Confirm Password</label>
-                     <input class="form-control" id="registerConfirmPassword" name="registerConfirmPassword" type="password" placeholder="confirm password" />
-                     <span class="capsLockMsg"></span>
-                  </div>
-                  <span id="registerError" class="errmsg"></span>
-                  <button class="btn btn-success pull-right" onclick="register()">Sign Up</button>
-               </div>
-               <div class="panel-footer">
-                  <div style="height:35px;">
-                     <a href="javascript:show('login')" class="pull-left">Login</a>
-                     <a href="javascript:show('forgotPassword')" class="pull-right">Forgot Password?</a>
-                  </div>
-                  <div style="text-align:center;">
-                     Don't have an account? <a href="javascript:show('register')"><span>Sign Up!</span> </a>
-                  </div>
-               </div>
+            <div class="login-social">
+                <a href="" class="login-social-btn">
+                    <i class="fa fa-facebook-square login-icon"></i>
+                </a>
+                <a href="" class="login-social-btn">
+                    <i class="fa fa-google login-icon"></i>
+                </a>
+                <a href="" class="login-social-btn">
+                    <i class="fa fa-windows login-icon"></i>
+                </a>
             </div>
-         </div>
-      </div>
-
-      <div id="forgotPassword" class="container" style="display:none;">
-         <div id="loginPanel" class="row center-block">
-            <div class="panel panel-warning col-lg-6" style="padding:0;">
-               <div class="panel-heading">Forgot Password</div>
-               <div class="panel-body">
-                  <div class="form-group">
-                     <label for="forgotPassword">Email Address</label>
-                     <input class="form-control" id="forgotPasswordEmail" name="forgotPasswordEmail" type="email" placeholder="email" onclick="$('#forgotPassword .errmsg').html('');"/>
-                     <span class="errmsg"></span>
-                  </div>
-                  <button class="btn btn-warning pull-right" onclick="forgotPassword()">Send</button>
-               </div>
-               <div class="panel-footer">
-                  <div style="height:35px;">
-                     <a href="javascript:show('login')" class="pull-left">Login</a>
-                  </div>
-                  <div style="text-align:center;">
-                     Don't have an account? <a href="javascript:show('register')"><span>Sign Up!</span> </a>
-                  </div>
-               </div>
+            <div class="login-option"><strong>or</strong></div>
+            <div class="login-form">
+                <div class="row">
+                    <div class="col-md-12">
+                        <input type="email" class="form-control input-lg login-input" id="email" placeholder="Email">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <input type="password" class="form-control input-lg login-input" id="password" placeholder="Password">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <button type="button" class="btn btn-primary btn-lg btn-block login-btn">Sign in</button>
+                    </div>
+                </div>
             </div>
-         </div>
-      </div>
-
-      <div id="changePassword" class="container" style="display:none;">
-         <div id="loginPanel" class="row center-block">
-            <div class="panel panel-warning col-lg-6" style="padding:0;">
-               <div class="panel-heading">Reset Password</div>
-               <div class="panel-body">
-                  <div class="form-group">
-                     <label for="changeNewPassword">New Password</label>
-                     <input class="form-control" id="changeNewPassword" name="changeNewPassword" type="password" placeholder="password" />
-                     <span class="capsLockMsg"></span>
-                  </div>
-                  <div class="form-group">
-                     <label for="changeConfirmPassword">Confirm Password</label>
-                     <input class="form-control" id="changeConfirmPassword" name="changeConfirmPassword" type="password" placeholder="confirm password" />
-                     <span class="capsLockMsg"></span>
-                  </div>
-                  <span id="changePasswordError" class="errmsg"></span>
-                  <button class="btn btn-warning pull-right" onclick="changePassword()">Change Password</button>
-               </div>
+            <div class="signup-footer">
+                <span class="signup-message">Don't have an account?</span>&nbsp;&nbsp;<a class="sign-up-link">Sign up</a>
             </div>
-         </div>
-      </div>
-        
-      <div id="footer" class="container">
-         <div class="row">
-            <div class="row center-block" style="margin-top:20px;text-align:center;">
-               &copy; Copyright 2016 | ConnectedMD | 
-               <a href="/Content/terms-of-service.html" target="_blank" style="color:#000;text-decoration:none;">Terms</a> | 
-               <a href="/Content/privacy-policy.html" target="_blank" style="color:#000;text-decoration:none;">Privacy</a>
+            <div class="login-trademark">
+                <span style="color:#827E7E;">&copy; ConnectedMD Inc. 2016</span>
             </div>
-         </div>
-      </div>
+        </div>
+    </div>
+</body>
 <script>
 $("#email, #password").keypress(function (event) {
    if (event.which == 13) { login(); }

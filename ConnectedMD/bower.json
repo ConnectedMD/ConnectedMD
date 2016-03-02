@@ -1,11 +1,12 @@
 {
-  "name": "BlankCordovaApp1",
+  "name": "ConnectedMD",
   "dependencies": {
     "react": "",
     "react-router": "",
     "flux": "",
     "ratchet": "",
-    "bootstrap":""
+    "bootstrap":"",
+    "font-awesome": ""
   },
   "exportsOverride": {
     "react": {
@@ -16,6 +17,10 @@
     },
     "flux": {
       "js":  "dist/*.js"
+    },
+    "font-awesome": {
+      "css":  "css/*.css",
+      "fonts":  "fonts/*.*"
     },
     "*": {
       "js": "dist/js/*.js",

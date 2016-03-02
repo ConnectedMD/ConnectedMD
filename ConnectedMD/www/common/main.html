@@ -1,0 +1,46 @@
+<div class="mediaTest">
+	<span class="screenDev screen1920px">1920px</span>
+	<span class="screenDev screen1600px">1600px</span>
+	<span class="screenDev screen1366px">1366px</span>
+	<span class="screenDev screen1360px">1360px</span>
+	<span class="screenDev screen1280px">1280px</span>
+	<span class="screenDev screen1200px">1200px</span>
+	<span class="screenDev screen1024px">1024px</span>
+	<span class="screenDev screen906px">906px</span>
+	<span class="screenDev screen800px">800px</span>
+	<span class="screenDev screen769px">769px</span>
+	<span class="screenDev screen768px">768px</span>
+	<span class="screenDev screen767px">767px</span>
+	<span class="screenDev screen736px">736px</span>
+	<span class="screenDev screen667px">667px</span>
+	<span class="screenDev screen640px">640px</span>
+	<span class="screenDev screen601px">601px</span>
+	<span class="screenDev screen568px">568px</span>
+	<span class="screenDev screen480px">480px</span>
+	<span class="screenDev screen414px">414px</span>
+	<span class="screenDev screen380px">380px</span>
+	<span class="screenDev screen375px">375px</span>
+	<span class="screenDev screen360px">360px</span>
+	<span class="screenDev screen320px">320px</span>
+</div>
+<img src="/content/logo.png" class="logo" ng-click="mainCtrl.defaultDashboard()" style="cursor:pointer"/>
+<div id="appHeader" class="btn-group pull-right" role="group" aria-label="">
+	<button type="button" class="btn btn-default" ui-sref="timeline"><span class="fa fa fa-sort-amount-desc"></span>Timeline</button>
+	<!--button type="button" class="btn btn-default" ui-sref="import"><span class="fa fa-upload"></span>Upload</button-->
+	<button type="button" class="btn btn-default" ng-click="mainCtrl.chat()"><span class="fa fa-comments"></span>Chat</button>
+	<button type="button" class="btn btn-default" onclick="$('#settingsMenu').toggle('fast')"><span class="fa fa-gear"></span>Settings</button>
+	<div id="settingsMenu" class="headerDropdown popup">
+		<a ui-sref="userProfile">My Account</a>
+		<a ui-sref="inviteUser">Invite User</a>
+		<!--a ui-sref="addUser">Add User</a-->
+		<a ui-sref="manageUsers">Manage Users</a>
+		<a ui-sref="manageGroups">Manage Groups</a>
+		<a ui-sref="companyProfile">Company Settings</a>
+		<a ui-sref="switchCompany">Switch Company</a>
+		<a ui-sref="dashboard">Switch Dashboard</a>
+	</div>	
+	<button type="button" class="btn btn-default" ng-click="mainCtrl.logout()"><span class="fa fa-sign-out"></span>Logout</button>
+</div>
+<a href="#0" class="cd-nav-trigger"><span></span></a>
+
+
