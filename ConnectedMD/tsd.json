@@ -6,46 +6,46 @@
   "bundle": "typings/tsd.d.ts",
   "installed": {
     "react/react.d.ts": {
-      "commit": "4ba57e605bd71bf7248de65aac0b4f50e3eb1c9e"
+      "commit": "945ebfe049964e429c2530971b9081f3c0f611df"
     },
     "react/react-global.d.ts": {
-      "commit": "4ba57e605bd71bf7248de65aac0b4f50e3eb1c9e"
+      "commit": "945ebfe049964e429c2530971b9081f3c0f611df"
     },
     "flux/flux.d.ts": {
-      "commit": "4ba57e605bd71bf7248de65aac0b4f50e3eb1c9e"
+      "commit": "945ebfe049964e429c2530971b9081f3c0f611df"
     },
     "react-router/react-router.d.ts": {
-      "commit": "4ba57e605bd71bf7248de65aac0b4f50e3eb1c9e"
+      "commit": "945ebfe049964e429c2530971b9081f3c0f611df"
     },
     "react/react-dom.d.ts": {
-      "commit": "4ba57e605bd71bf7248de65aac0b4f50e3eb1c9e"
+      "commit": "945ebfe049964e429c2530971b9081f3c0f611df"
     },
     "react/react-addons-create-fragment.d.ts": {
-      "commit": "4ba57e605bd71bf7248de65aac0b4f50e3eb1c9e"
+      "commit": "945ebfe049964e429c2530971b9081f3c0f611df"
     },
     "react/react-addons-css-transition-group.d.ts": {
-      "commit": "4ba57e605bd71bf7248de65aac0b4f50e3eb1c9e"
+      "commit": "945ebfe049964e429c2530971b9081f3c0f611df"
     },
     "react/react-addons-transition-group.d.ts": {
-      "commit": "4ba57e605bd71bf7248de65aac0b4f50e3eb1c9e"
+      "commit": "945ebfe049964e429c2530971b9081f3c0f611df"
     },
     "react/react-addons-linked-state-mixin.d.ts": {
-      "commit": "4ba57e605bd71bf7248de65aac0b4f50e3eb1c9e"
+      "commit": "945ebfe049964e429c2530971b9081f3c0f611df"
     },
     "react/react-addons-perf.d.ts": {
-      "commit": "4ba57e605bd71bf7248de65aac0b4f50e3eb1c9e"
+      "commit": "945ebfe049964e429c2530971b9081f3c0f611df"
     },
     "react/react-addons-pure-render-mixin.d.ts": {
-      "commit": "4ba57e605bd71bf7248de65aac0b4f50e3eb1c9e"
+      "commit": "945ebfe049964e429c2530971b9081f3c0f611df"
     },
     "react/react-addons-test-utils.d.ts": {
-      "commit": "4ba57e605bd71bf7248de65aac0b4f50e3eb1c9e"
+      "commit": "945ebfe049964e429c2530971b9081f3c0f611df"
     },
     "react/react-addons-update.d.ts": {
-      "commit": "4ba57e605bd71bf7248de65aac0b4f50e3eb1c9e"
+      "commit": "945ebfe049964e429c2530971b9081f3c0f611df"
     },
     "react-router/history.d.ts": {
-      "commit": "4ba57e605bd71bf7248de65aac0b4f50e3eb1c9e"
+      "commit": "945ebfe049964e429c2530971b9081f3c0f611df"
     }
   }
 }

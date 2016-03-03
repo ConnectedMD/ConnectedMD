@@ -1,7 +1,7 @@
 # For security reasons, logging, dev errors, and debugging 
 # should be disabled in production deployments:
 
-#nodeProcessCommandLine: "C:\Program Files (x86)\nodejs\node.exe"
+nodeProcessCommandLine: "C:\Program Files\nodejs\node.exe"
 loggingEnabled: true
 debuggingEnabled: true
 devErrorsEnabled: true
