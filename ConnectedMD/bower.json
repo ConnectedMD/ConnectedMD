@@ -1,31 +1,19 @@
 {
-  "name": "ConnectedMD",
-  "dependencies": {
-    "react": "",
-    "react-router": "",
-    "flux": "",
-    "ratchet": "",
-    "bootstrap":"",
-    "font-awesome": ""
-  },
-  "exportsOverride": {
-    "react": {
-      "js": "*.js"
-    },
-    "react-router": {
-      "js":  "build/umd/*.js"
-    },
-    "flux": {
-      "js":  "dist/*.js"
-    },
-    "font-awesome": {
-      "css":  "css/*.css",
-      "fonts":  "fonts/*.*"
-    },
-    "*": {
-      "js": "dist/js/*.js",
-      "css": "dist/css/*.css",
-      "fonts": "dist/fonts/*"
-    }
-  }
+   "name": "ConnectedMD",
+   "dependencies": {
+      "jquery":"",
+      "bootstrap":"",
+      "font-awesome": ""
+   },
+   "exportsOverride": {
+      "font-awesome": {
+         "css":  "css/*.css",
+         "fonts":  "fonts/*.*"
+      },
+      "*": {
+         "js": "dist/js/*.js",
+         "css": "dist/css/*.css",
+         "fonts": "dist/fonts/*"
+      }
+   }
 }
