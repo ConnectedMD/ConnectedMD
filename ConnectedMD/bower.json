@@ -1,11 +1,26 @@
 {
    "name": "ConnectedMD",
    "dependencies": {
+      "angular":"",
+      "angular-animate":"",
+      "angular-ui-bootstrap":"",
+      "angular-ui-router":"",
+      "moment":"",
       "jquery":"",
       "bootstrap":"",
       "font-awesome": ""
    },
    "exportsOverride": {
+      "angular": {
+         "js":  "*.min.js",
+         "css":  "*.css"
+      },
+      "angular-animate": {
+         "js":  "*.min.js"
+      },
+      "angular-ui-router": {
+         "js":  "release/*.min.js"
+      },
       "font-awesome": {
          "css":  "css/*.css",
          "fonts":  "fonts/*.*"
