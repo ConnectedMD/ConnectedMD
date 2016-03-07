@@ -120,13 +120,13 @@ exports.presenter = function (processRequest, processResponse, siteCache, etagCa
 				processResponse.writeHead(200, { "Content-Type": contentType, "Access-Control-Allow-Credentials": "True", "Access-Control-Allow-Origin": "*", "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS" });
 				if (contentType == "text/html") {
 					data = replaceTags(data.toString('utf8'), relativePath, processResponse, lang);
-				} else if (contentType == "application/javascript" && !relativePath.startsWith("node_modules")  && !relativePath.startsWith("common/pdf")) {
+				} else if (contentType == "application/javascript" && !relativePath.startsWith("libs")  && !relativePath.startsWith("common/pdf")) {
 					data = data.toString('utf8');
-					if (!relativePath.startsWith("node_modules" && !relativePath.startsWith("common/pdf"))) { data = compressJS(data); }
+					if (!relativePath.startsWith("libs" && !relativePath.startsWith("common/pdf"))) { data = compressJS(data); }
 					data = replaceTags(data, relativePath, processResponse, lang);
-				} else if (contentType == "application/json" && !relativePath.startsWith("node_modules")) {
+				} else if (contentType == "application/json" && !relativePath.startsWith("libs")) {
 					data = replaceTags(data.toString('utf8'), relativePath, processResponse, lang);
-				} else if (contentType == "text/css" && !relativePath.startsWith("node_modules")) {
+				} else if (contentType == "text/css" && !relativePath.startsWith("libs")) {
 					processResponse.end(data);
 				} else {
 					processResponse.end(data);

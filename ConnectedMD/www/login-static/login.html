@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="<%=LANG%>">
-   <head>
-      <meta charset="utf-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <link rel="icon" type="image/ico" href="/favicon.ico"/>
-      <title>Log in</title>
-      <link href="/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
-      <link href="/libs/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
-      <link href="/css/animate.min.css" rel="stylesheet"/>
-      <link href="/css/features.css" rel="stylesheet"/>
-      <link href="/css/app.css" rel="stylesheet"/>
-    <script src="/libs/bootstrap/js/bootstrap.min.js"></script>
-   </head>
+<head>
+   <meta charset="utf-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   <link rel="icon" type="image/ico" href="/favicon.ico"/>
+   <title>Log in</title>
+   <link href="/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+   <link href="/libs/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
+   <link href="/css/animate.min.css" rel="stylesheet"/>
+   <link href="/css/features.css" rel="stylesheet"/>
+   <link href="/css/app.css" rel="stylesheet"/>
+</head>
 <body class="login-body">
-    <div class="login-view">
+
+   <!-- -->
+    <div id="login" class="login-view">
         <div class="login-view-overlay"></div>
         <div class="login-container">
             <div class="login-brand-container">
@@ -58,20 +59,53 @@
                 </div>
             </div>
             <div class="signup-footer">
-                <span class="signup-message">Don't have an account?</span>&nbsp;&nbsp;<a class="sign-up-link">Sign up</a>
+                <span class="signup-message">Don't have an account?</span>&nbsp;&nbsp;<a class="sign-up-link" onclick="showPanel('register')">Sign up</a>
             </div>
             <div class="login-trademark">
                 <span style="color:#827E7E;">&copy; ConnectedMD Inc. 2016</span>
             </div>
         </div>
     </div>
-</body>
+    
+   <!-- -->
+    <div id="register" class="signup-view">
+        <div class="signup-prompt">
+            <h4>SIGN UP</h4>
+            <span class="signup-subtext">Get started using Minerva with an account</span>
+        </div>
+        <div class="signup-social">
+            <button class="btn btn-primary btn-lg btn-fill signup-btn-social">Signup with Facebook</button>
+        </div>
+        <div class="signup-form">
+            <div class="signup-input-box">
+                <input type="email" class="form-control input-lg signup-input" id="email" placeholder="Email" autocomplete="off">
+            </div>
+            <div class="signup-input-box">
+                <input type="password" class="form-control input-lg signup-input" id="password" placeholder="Password">
+            </div>
+            <div class="signup-input-box">
+                <input type="password" class="form-control input-lg signup-input" id="confirm_password" placeholder="Password Again">
+            </div>
+            <div class="signup-submit-box">
+                <button class="btn btn-success btn-fill btn-lg signup-btn-submit">Sign up with Email</button>
+            </div>
+            <div class="signup-terms-box">
+                <span>By signing up for an account, you agree to our</span><br>
+                <span class="signup-terms-link"><strong>Terms of Service</strong></span>&nbsp;&&nbsp;
+                <span class="signup-terms-link"><strong>Privacy Policy</strong></span>
+            </div>
+        </div>
+    </div>
+
+   <script src="/libs/jquery/js/jquery.min.js"></script>
+   <script src="/libs/bootstrap/js/bootstrap.min.js"></script>
+
 <script>
 $("#email, #password").keypress(function (event) {
    if (event.which == 13) { login(); }
 });
 baseAPI = "<%=API%>";
-createCookie("TOKEN", "", -1);
+//createCookie("TOKEN", "", -1);
 $("#password").on("keypress click focus blur", function (e) { checkCapsLock(e, $("#login .capsLockMsg")); });
 $("#registerPassword").on("keypress click focus blur", function (e) { checkCapsLock(e, $("#register .capsLockMsg")); });
 $("#registerConfirmPassword").on("keypress click focus blur", function (e) { checkCapsLock(e, $("#register .capsLockMsg")); });
@@ -110,7 +144,7 @@ var checkCapsLock = function (e, m) {
       }
    }
 };
-var show = function (panel) {
+var showPanel = function (panel) {
    $("#login").hide();
    $("#register").hide();
    $("#forgotPassword").hide();
@@ -253,7 +287,7 @@ var getUrlParameter = function getUrlParameter(sParam) {
       }
    }
 };
-if (getUrlParameter("token") != undefined) { show("changePassword"); }
+if (getUrlParameter("token") != undefined) { showPanel("changePassword"); }
 </script>
 </body>
 </html>

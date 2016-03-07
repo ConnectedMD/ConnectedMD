@@ -25,6 +25,9 @@
          "css":  "css/*.css",
          "fonts":  "fonts/*.*"
       },
+      "jquery": {
+         "js":  "dist/*.min.js"
+      },
       "*": {
          "js": "dist/js/*.js",
          "css": "dist/css/*.css",
