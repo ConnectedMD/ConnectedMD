@@ -23,22 +23,16 @@
                     <div class="col-md-12" style="text-align: center;">
                         <h1 class="login-brand"><i class="pe-7s-plugin"></i></h1>
                         <h1 class="login-brand">
-                            Minerva</h1>
+                            Connected MD</h1>
                         <hr />
                         <h6 class="login-brand-subtext center-block">Feel better &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;Live better</h6>
                     </div>
                 </div>
             </div>
             <div class="login-social">
-                <a href="" class="login-social-btn">
-                    <i class="fa fa-facebook-square login-icon"></i>
-                </a>
-                <a href="" class="login-social-btn">
-                    <i class="fa fa-google login-icon"></i>
-                </a>
-                <a href="" class="login-social-btn">
-                    <i class="fa fa-windows login-icon"></i>
-                </a>
+                <a href="" class="login-social-btn"><i class="fa fa-facebook-square login-icon"></i></a>
+                <a href="" class="login-social-btn"><i class="fa fa-google login-icon"></i></a>
+                <a href="" class="login-social-btn"><i class="fa fa-windows login-icon"></i></a>
             </div>
             <div class="login-option"><strong>or</strong></div>
             <div class="login-form">
@@ -59,7 +53,14 @@
                 </div>
             </div>
             <div class="signup-footer">
-                <span class="signup-message">Don't have an account?</span>&nbsp;&nbsp;<a class="sign-up-link" onclick="showPanel('register')">Sign up</a>
+               <div>
+                  <span class="signup-message" style="margin-right:15px;">Don't have an account?</span>
+                  <a class="sign-up-link" onclick="showPanel('register')">Sign up</a>
+               </div>
+               <div>
+                  <span class="signup-message" style="margin-right:15px;">Forgot your password?</span>
+                  <a class="sign-up-link" onclick="showPanel('forgotPassword')">Click here</a>
+               </div>
             </div>
             <div class="login-trademark">
                 <span style="color:#827E7E;">&copy; ConnectedMD Inc. 2016</span>
@@ -71,7 +72,7 @@
     <div id="register" class="signup-view">
         <div class="signup-prompt">
             <h4>SIGN UP</h4>
-            <span class="signup-subtext">Get started using Minerva with an account</span>
+            <span class="signup-subtext">Get started using ConnectedMD with an account</span>
         </div>
         <div class="signup-social">
             <button class="btn btn-primary btn-lg btn-fill signup-btn-social">Signup with Facebook</button>
@@ -97,6 +98,29 @@
         </div>
     </div>
 
+   <!-- -->
+   <div id="forgotPassword" class="signup-view">
+      <div class="signup-prompt">
+         <h4>FORGOT PASSWORD</h4>
+         <span class="signup-subtext">Get your ConnectedMD account information</span>
+      </div>
+      <div class="signup-form">
+      </div>
+      <div class="signup-footer">
+         <div>
+            <span class="signup-message" style="margin-right:15px;">Don't have an account?</span>
+            <a class="sign-up-link" onclick="showPanel('register')">Sign up</a>
+         </div>
+         <div>
+            <span class="signup-message" style="margin-right:15px;">Forgot your password?</span>
+            <a class="sign-up-link" onclick="showPanel('forgotPassword')">Click here</a>
+         </div>
+      </div>
+      <div class="login-trademark">
+         <span style="color:#827E7E;">&copy; ConnectedMD Inc. 2016</span>
+      </div>
+   </div>
+    
    <script src="/libs/jquery/js/jquery.min.js"></script>
    <script src="/libs/bootstrap/js/bootstrap.min.js"></script>
 
