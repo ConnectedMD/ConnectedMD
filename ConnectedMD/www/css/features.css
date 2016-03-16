@@ -1,8 +1,14 @@
+.btn-facebook{
+    background-color: #405D9B !important;
+    border-color: #405D9B !important;
+    box-shadow: 0 1px 1px 0px #324161;
+}
+
 /* -----------------------------------------------
  * Login
  * ---------------------------------------------*/
 .login-body{
-    background-color: #59526C;
+    background-color: #1F6D6D;
 }
 
 .login-view{
@@ -11,6 +17,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: #6ab4b0;
 }
 
 .login-view .login-view-overlay{
@@ -20,11 +27,8 @@
     height: 100%;
     width:100%;
     background-size: cover;
-    background:linear-gradient(
-            to bottom,
-            rgba(129,119,157, 0.85),
-            rgba(75,70,92, 1)
-    ),url('/images/farm-bg.jpg') no-repeat center center fixed;
+    background: linear-gradient( to bottom, rgba(126,206,205,0.75), rgba(0, 123, 123, 0.85) ),url('../images/farm-bg.jpg') no-repeat center center fixed;
+),url('../images/farm-bg.jpg') no-repeat center center fixed;
     -webkit-filter: blur(2px);
     filter: blur(2px);
 }
@@ -71,21 +75,25 @@
 }
 
 .login-option{
-    text-align:center; z-index:1; color:#b1b1b1; padding-top:20px; font-size:1.75rem;
+    text-align:center; z-index:1; color:#CDE0E8; padding-top:20px; font-size:1.75rem;
 }
 
 .login-brand{
-    color: #f1f1f1;
+    color: #fff;
+}
+
+.login-hr{
+    border-top: 1px solid #f1f1f1;
 }
 
 .login-brand-subtext{
-    color: #d0d0d0;
+    color: #fff;
     text-transform: none;
-    font-weight:300;
+    font-weight: 400;
 }
 
 .login-feature-icon{
-    color: #a5a5a5;
+    color: #fff;
     font-size:2.5rem;
 }
 
@@ -104,8 +112,12 @@
 
 .login-input{
     background-color:transparent !important;
-    border: 1px solid #E3E3E3;
-    color: #fafafa !important;
+    border: 1px solid #fff;
+    color: #fff !important;
+}
+
+.login-input:focus{
+    border: 1px solid #fff;
 }
 
 .login-trademark{
@@ -117,10 +129,12 @@
 }
 
 .login-btn{
-    border-color:#9268D7 !important;
-    background-color: #9268D7 !important;
-    color: #f1f1f1;
-    box-shadow: 0 29px 32px -20px rgba(0,0,0,0.5),0 4px 11px -3px rgba(0,0,0,0.25);
+    border-color:#FF8105 !important;
+    background-color: #FF8105 !important;
+    color: #fff;
+    /*box-shadow: 0 29px 32px -20px rgba(0, 0, 0, 0.82);*/
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.22);
+    opacity: 1;
 }
 
 .login-btn:hover{
@@ -138,7 +152,7 @@
 .signup-footer .signup-message{
     text-transform:none;
     font-weight:300;
-    color: #868686;
+    color: #B5B5B5;
     font-size:1.5rem;
 }
 
@@ -162,18 +176,18 @@
 }
 @media (min-width: 768px) {
     .login-form {
-        width: 750px;
+        width: 600px;
     }
 }
 
 
-/* ---------------------------------------------
+/* --------------------------------------------
  *    Sign Up
  * -------------------------------------------*/
 
 .signup-view{
     min-height:100%;
-    background-color: #4e4960;
+    background-color: #559292;
 }
 
 .signup-prompt{
@@ -182,25 +196,30 @@
     flex-direction: column;
     justify-content: center;
     padding:10px 0 20px 0;
-    color: #f1f1f1;
+    color: #ffffff;
     text-align:center;
 }
 
 .signup-prompt .signup-subtext{
-    text-transform:none; color: #C5C5C5;
+    text-transform:none; color: #ffffff;
 }
 
 .signup-social{
-    width:100%;
+    width: 100%;
     display: flex;
     justify-content: center;
-    background-color: #3e3b4b;
-    padding:30px 20px !important;
+    background-color: #296F79;
+    padding: 30px 20px !important;
+    box-shadow: inset 0 0 10px #4C4D4E;
+    border: 2px solid #599BA5;
+    border-left: none;
+    border-right: none;
 }
 
 .signup-btn-social{
     width:100%;
     max-width:600px;
+    box-shadow: 0 1px 1px 0px #324161;
 }
 
 .signup-form{
@@ -218,8 +237,8 @@
 .signup-form .signup-input-box .signup-input{
     background-color: transparent !important;
     border: none;
-    border-bottom: 1px solid #5E5B7B;
-    color: #fafafa !important;
+    border-bottom: 1px solid #86C5C5;
+    color: #ffffff !important;
     border-radius: 0px;
 }
 
@@ -230,35 +249,49 @@
     padding:20px 20px;
 }
 .signup-form .signup-submit-box .signup-btn-submit{
-    background-color: #8664C1;
-    border: 1px solid #8664C1;
-    box-shadow: 0 4px 10px 1px #444152;
+    background-color: #417082;
+    border: 1px solid #417082;
+    box-shadow: 0 1px 1px 1px #225A67;
 }
 
 .signup-form .signup-terms-box{
     width:100%;
     text-align:center;
-    color: #8C83A2;
+    color: #D6E7E8;
 }
 
 .signup-form .signup-terms-box .signup-terms-link{
-    color: #C365C3;
+    color: #4FFFF8;
 }
 
 .signup-input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    color: #909090;
+    color: #D6D6D6;
 }
 
 .signup-input::-moz-placeholder{
-    color: #909090;
+    color: #D6D6D6;
 }
 
 .signup-input:-ms-input-placeholder {
-    color: #909090;
+    color: #D6D6D6;
 }
 
 .signup-input:-moz-placeholder {
-    color: #909090;
+    color: #D6D6D6;
+}
+
+.signup-forgot-password{
+    font-size: 1.5rem;
+    color: #00D3FF;
+}
+
+.onboarding-view{
+    height: 100vh;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #7CCFCA;
 }
 
 /* media layout overrides */
