@@ -6,8 +6,6 @@
       <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\forms\pediatrician\month-02-visit-v001.html" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\forms\pediatrician\month-06-visit-v001.html" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\forms\psychiatrist\initial-assessment-v001.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ConnectedMD/www/login-static/login.html" afterPath="$PROJECT_DIR$/ConnectedMD/www/login-static/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ConnectedMD.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,7 +55,7 @@
       <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ConnectedMD/www/login-static/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="3.3890674" vertical-offset="306" max-vertical-offset="2652">
+            <state vertical-scroll-proportion="3.2250805" vertical-offset="408" max-vertical-offset="2652">
               <caret line="267" column="10" selection-start-line="267" selection-start-column="10" selection-end-line="267" selection-end-column="10" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -356,7 +354,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ConnectedMD/www/login-static/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.3890674" vertical-offset="306" max-vertical-offset="2652">
+        <state vertical-scroll-proportion="3.2250805" vertical-offset="408" max-vertical-offset="2652">
           <caret line="267" column="10" selection-start-line="267" selection-start-column="10" selection-end-line="267" selection-end-column="10" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
