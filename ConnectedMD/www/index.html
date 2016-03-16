@@ -7,8 +7,7 @@
       <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <link rel="icon" type="image/ico" href="/favicon.ico"/>
-      <title>:: recordminder ::</title>
-      <!--link href="//fonts.googleapis.com/css?family=Reenie+Beanie:regular" rel="stylesheet" type="text/css"/-->
+      <title>ConnectedMD</title>
       <!-- stylesheets -->
       <link href="/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
       <link href="/libs/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet"/>
@@ -29,8 +28,8 @@
       <script src="cordova.js"></script>
       <script src="scripts/platformOverrides.js"></script>
 
-      <div ui-view="header" class="header"></div>
-      <div id="page" ui-view></div>
+      <div ui-view="header" class="header">Header</div>
+      <div id="page" ui-view>Dashboard</div>
       <script>$traceurRuntime.options.experimental = true; new traceur.WebPageTranscoder(document.location.href).run();</script>
       <script type="module">import {default as webApp} from '/common/webApp.main.js';angular.bootstrap(document, [webApp]);</script>
       <script>

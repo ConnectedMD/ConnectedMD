@@ -47,7 +47,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <button type="button" class="btn btn-primary btn-lg btn-block login-btn">Sign in with Email</button>
+                        <button type="button" class="btn btn-primary btn-lg btn-block login-btn" onclick="login()">Sign in with Email</button>
                     </div>
                 </div>
                 <div class="row">
@@ -177,7 +177,14 @@
            $("#changePassword").hide();
            $("#"+panel).show("fast");
         };
-        var login = function () {
+      var login = function () {
+         $("#loginError").html("");
+         $("#emailError").html("");
+         $("#passwordError").html("");
+         createCookie("TOKEN", "TEST", 1);
+         document.location.href = "/";
+      };
+         var loginFull = function () {
            $("#loginError").html("");
            $("#emailError").html("");
            $("#passwordError").html("");
@@ -312,6 +319,18 @@
            }
         };
         if (getUrlParameter("token") != undefined) { showPanel("changePassword"); }
-    </script>
+
+      function getCookie(name) { return (name = (document.cookie + ';').match(new RegExp(name + '=.*;'))) && name[0].split(/=|;/)[1]; }
+
+      function createCookie(name,value,days) {
+         var expires = "";
+         if (days) {
+            var date = new Date();
+            date.setTime(date.getTime()+(days*24*60*60*1000));
+            expires = "; expires="+date.toGMTString();
+         }
+         document.cookie = name+"="+value+expires+"; path=/";
+      }
+   </script>
 </body>
 </html>
