@@ -5,6 +5,72 @@
 }
 
 /* -----------------------------------------------
+ * Splash screen
+ * ---------------------------------------------*/
+.splash-screen{
+    height: 100vh;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #6ab4b0;
+}
+
+.splash-screen .splash-screen-overlay{
+    position: fixed !important;
+    top:0;
+    left:0;
+    height: 100%;
+    width:100%;
+    background-size: cover;
+    background: linear-gradient( to bottom, rgba(126,206,205,0.75), rgba(0, 123, 123, 0.85) ),url('../images/farm-bg.jpg') no-repeat center center fixed;
+),url('../images/farm-bg.jpg') no-repeat center center fixed;
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+}
+
+.splash-screen-container{
+    height:100%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    /*justify-content: center;*/
+}
+
+.splash-screen-container .splash-screen-brand-container{
+    /*height: 30vh;*/
+    display: flex;
+    justify-content: center;
+}
+
+.splash-brand-container{
+    border-radius: 100px;
+    width: 100px !important;
+    height: 120px !important;
+    /*padding:7px;
+    text-align:center;*/
+    background-color:#ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 4px 0px #318584;
+}
+
+.splash-brand-container .splash-brand{
+    color: #7ECECD;
+}
+
+.splash-brand-container .splash-brand .fa{
+    text-shadow: 0px 2px 1px #318584 !important;
+}
+
+.splash-feature{
+    color: #E2E2E2;
+    font-size: 4rem !important;
+}
+
+/* -----------------------------------------------
  * Login
  * ---------------------------------------------*/
 .login-body{
@@ -283,6 +349,15 @@
 .signup-forgot-password{
     font-size: 1.5rem;
     color: #00D3FF;
+}
+
+/* --------------------------------------------
+ *    Forgot Password
+ * -------------------------------------------*/
+
+.forgot-view{
+    min-height:100%;
+    background-color: #559292;
 }
 
 .onboarding-view{

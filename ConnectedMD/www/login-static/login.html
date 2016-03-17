@@ -14,9 +14,43 @@
     <link href="/libs/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
     <link href="/css/pe-icon-7-stroke.css" rel="stylesheet" />
+    <link href="/css/medical_icons.css" rel="stylesheet" />
 </head>
 <body class="login-body">
-    <div id="login" class="login-view">
+
+    <div class="splash-screen">
+        <div class="splash-screen-overlay"></div>
+        <div class="splash-screen-container">
+            <div class="splash-screen-brand-container">
+                <div class="row">
+                    <div class="col-md-12 center-block" style="text-align: center;">
+                        <div class="splash-brand-container center-block">
+                            <h1 class="splash-brand"><i class="pe-7s-plugin"></i></h1>
+                            <!--<h1 class="splash-brand"><i class="fa fa-stethoscope fa-lg"></i></h1>-->
+                        </div>
+                        <h1 class="login-brand">
+                            Minerva</h1>
+                        <hr class="login-hr" style="max-width: 40%;" />
+                        <h6 class="login-brand-subtext center-block">Feel better &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;Live better</h6>
+                        <br><br>
+                        <div style="padding:0 10px;">
+                            <h3 style="color: #f1f1f1; font-size: 2rem;">The health platform for practices & patients</h3>
+                        </div>
+                        <div>
+                            <i class="splash-feature flaticon-stethoscope"></i>
+                            <i class="splash-feature flaticon-medicine"></i>
+                            <i class="splash-feature flaticon-doctor"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="login-trademark">
+                <span style="color:#B7B7B7;">&copy; ConnectedMD Inc. 2016</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="login" class="login-view" style="display:none;">
         <div class="login-view-overlay"></div>
         <div class="login-container">
             <div class="login-brand-container">
@@ -94,7 +128,7 @@
         </div>
     </div>
 
-    <div id="forgotPassword" class="signup-view" style="display:none;">
+    <div id="forgotPassword" class="forgot-view" style="display:none;">
       <div class="signup-prompt">
          <h4>FORGOT PASSWORD</h4>
          <span class="signup-subtext">Get your ConnectedMD account information</span>
@@ -114,7 +148,7 @@
       <div class="login-trademark">
          <span style="color:#827E7E;">&copy; ConnectedMD Inc. 2016</span>
       </div>
-   </div>
+    </div>
 
    <!-- -->
    <div id="changePassword" class="signup-view" style="display:none;">
