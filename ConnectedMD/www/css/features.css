@@ -360,6 +360,27 @@
     background-color: #559292;
 }
 
+.forgot-prompt{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:10px 0 20px 0;
+    color: #ffffff;
+    text-align:center;
+    padding-top:100px;
+}
+
+.forgot-prompt .forgot-icon-cont{
+    /*border: 3px solid #fff;
+    width: 150px;
+    border-radius: 100px;*/
+}
+
+.forgot-prompt .forgot-icon-cont .forgot-icon{
+    font-size:8rem;
+}
+
 .onboarding-view{
     height: 100vh;
     width:100%;
@@ -367,6 +388,13 @@
     flex-direction: column;
     justify-content: center;
     background-color: #7CCFCA;
+}
+
+@media (max-width:450px){
+    .forgot-prompt{
+        padding-left:30px !important;
+        padding-right:30px !important;
+    }
 }
 
 /* media layout overrides */

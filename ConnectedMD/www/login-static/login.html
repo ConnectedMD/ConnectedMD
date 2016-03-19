@@ -18,7 +18,7 @@
 </head>
 <body class="login-body">
 
-    <div class="splash-screen">
+    <div class="splash-screen" style="display:none;" >
         <div class="splash-screen-overlay"></div>
         <div class="splash-screen-container">
             <div class="splash-screen-brand-container">
@@ -128,31 +128,67 @@
         </div>
     </div>
 
-    <div id="forgotPassword" class="forgot-view" style="display:none;">
-      <div class="signup-prompt">
-         <h4>FORGOT PASSWORD</h4>
-         <span class="signup-subtext">Get your ConnectedMD account information</span>
+    <div id="forgotPassword" class="forgot-view"  style="display:none;">
+      <div class="forgot-prompt">
+          <h1 class="forgot-icon"><i class="pe-7s-door-lock"></i></h1>
+          <h3>Forgot your password?</h3>
+          <span class="signup-subtext">Enter your email address below and we'll send you a link to reset your password</span>
       </div>
       <div class="signup-form">
+          <div class="signup-input-box">
+              <input id="forgotPasswordEmail" type="email" class="form-control input-lg signup-input" id="email" placeholder="Email" autocomplete="off">
+          </div>
+          <div class="signup-submit-box">
+              <button id="reset_password" class="btn btn-success btn-fill btn-lg signup-btn-submit">Send Reset Email</button>
+          </div>
       </div>
       <div class="signup-footer">
          <div>
-            <span class="signup-message" style="margin-right:15px;">Don't have an account?</span>
-            <a class="sign-up-link" onclick="showPanel('register')">Sign up</a>
+            <span class="signup-message" style="margin-right:15px; color:#fff;">Return to login?</span>
+            <a class="sign-up-link" style="color:#16FFFF;" onclick="showPanel('login')">Click here</a>
          </div>
-         <div>
-            <span class="signup-message" style="margin-right:15px;">Return to login</span>
-            <a class="sign-up-link" onclick="showPanel('login')">Click here</a>
-         </div>
-      </div>
-      <div class="login-trademark">
-         <span style="color:#827E7E;">&copy; ConnectedMD Inc. 2016</span>
       </div>
     </div>
 
-   <!-- -->
-   <div id="changePassword" class="signup-view" style="display:none;">
+    <div id="emailsent" class="forgot-view" style="display:none;">
+        <div class="forgot-prompt">
+            <div class="forgot-icon-cont center-block">
+                <h1 class="forgot-icon"><i class="pe-7s-paper-plane"></i></h1>
+            </div>
+            <h3>Reset Email Sent</h3>
+            <span class="signup-subtext">We've sent an email with instructions to reset your password.</span>
+        </div>
+        <div class="signup-form">
+            <div class="signup-submit-box">
+                <a href="" id="to_signin" class="btn btn-success btn-fill btn-lg signup-btn-submit">Back to Sign in</a>
+            </div>
+        </div>
+        <div class="login-trademark">
+            <span style="color:#fff;">&copy; ConnectedMD Inc. 2016</span>
+        </div>
+    </div>
 
+   <!-- -->
+   <div id="changePassword" class="signup-view">
+       <div class="forgot-prompt">
+           <h1 class="forgot-icon"><i class="pe-7s-door-lock"></i></h1>
+           <h3>Reset your password</h3>
+           <span class="signup-subtext">Reset your password by entering a new one and clicking the button below</span>
+       </div>
+       <div class="signup-form">
+           <div class="signup-input-box">
+               <input id="resetpassword" type="password" class="form-control input-lg signup-input" id="email" placeholder="New Password" autocomplete="off">
+           </div>
+           <div class="signup-submit-box">
+               <button id="save_password" class="btn btn-success btn-fill btn-lg signup-btn-submit">Reset Password</button>
+           </div>
+       </div>
+       <div class="signup-footer">
+           <div>
+               <span class="signup-message" style="margin-right:15px; color:#fff;">Return to login?</span>
+               <a class="sign-up-link" style="color:#16FFFF;" onclick="showPanel('login')">Click here</a>
+           </div>
+       </div>
    </div>
 
    <script src="/libs/jquery/js/jquery.min.js"></script>
@@ -169,6 +205,7 @@
         $("#registerPassword").on("keypress click focus blur", function (e) { checkCapsLock(e, $("#register .capsLockMsg")); });
         $("#registerConfirmPassword").on("keypress click focus blur", function (e) { checkCapsLock(e, $("#register .capsLockMsg")); });
         $("#login_signup").on("click", function(e){ $("#login").hide(); $("#register").show();});
+        $("#reset_password").on("click", forgotPassword);
 
         var checkCapsLock = function (e, m) {
            m.html("");
