@@ -1,6 +1,6 @@
 # ConnectedMD
 
-# setup
+# Setup
 Install latest node
 
 `npm install -g cordova`

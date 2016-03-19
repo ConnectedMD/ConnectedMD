@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28a7eeb1-769e-4ced-927b-a96fe2931ea1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ConnectedMD/www/css/features.css" afterPath="$PROJECT_DIR$/ConnectedMD/www/css/features.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ConnectedMD/www/login-static/login.html" afterPath="$PROJECT_DIR$/ConnectedMD/www/login-static/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="ConnectedMD.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.766666" vertical-offset="0" max-vertical-offset="578">
-              <caret line="19" column="63" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
+            <state vertical-scroll-proportion="0.05151515" vertical-offset="0" max-vertical-offset="660">
+              <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -41,10 +39,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="features.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="features.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ConnectedMD/www/css/features.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.54320985" vertical-offset="6363" max-vertical-offset="8959">
+            <state vertical-scroll-proportion="-161.6207" vertical-offset="2028" max-vertical-offset="8959">
               <caret line="395" column="23" selection-start-line="395" selection-start-column="23" selection-end-line="395" selection-end-column="23" />
               <folding />
             </state>
@@ -137,10 +135,10 @@
         <option value="$PROJECT_DIR$/ConnectedMD/www/index.html" />
         <option value="$PROJECT_DIR$/ConnectedMD/www/login-static/signup.html" />
         <option value="$PROJECT_DIR$/ConnectedMD/www/login-static/reset-password.html" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/ConnectedMD/www/css/medical_icons.css" />
         <option value="$PROJECT_DIR$/ConnectedMD/www/login-static/login.html" />
         <option value="$PROJECT_DIR$/ConnectedMD/www/css/features.css" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -388,17 +386,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.766666" vertical-offset="0" max-vertical-offset="578">
-          <caret line="19" column="63" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ConnectedMD/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.5636363" vertical-offset="0" max-vertical-offset="1020">
@@ -441,10 +428,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ConnectedMD/www/css/features.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.54320985" vertical-offset="6363" max-vertical-offset="8959">
+        <state vertical-scroll-proportion="-161.6207" vertical-offset="2028" max-vertical-offset="8959">
           <caret line="395" column="23" selection-start-line="395" selection-start-column="23" selection-end-line="395" selection-end-column="23" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.05151515" vertical-offset="0" max-vertical-offset="660">
+          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
   </component>
