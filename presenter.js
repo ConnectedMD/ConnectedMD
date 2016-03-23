@@ -38,10 +38,10 @@ exports.presenter = function (processRequest, processResponse, siteCache, etagCa
 		var token = getCookie("TOKEN");
 		if (token === "0" || token === null || token === "") {
 			console.log("LOGIN", token, relativePath);
-			relativePath = "login-static/login.html";
+			relativePath = "index.html";
 		} else {
 			console.log("APP", token, relativePath);
-			relativePath = "index.html";	
+			relativePath = "app.html";	
 		}
 	}
 	if (relativePath.indexOf("?") > 0) { relativePath = relativePath.substring(0,relativePath.indexOf("?")); }
@@ -110,7 +110,10 @@ exports.presenter = function (processRequest, processResponse, siteCache, etagCa
 		});
 	} else {
 		//-- read file
-		fs.readFile("ConnectedMD/www/" + relativePath, function (err, data) {
+      var basePath = "cordova/www/";
+      console.log(relativePath);
+      if (relativePath.indexOf("plugins/") > 0) { basePath = "plugins"; }
+		fs.readFile(basePath + relativePath, function (err, data) {
 			if (err) {
 				console.log("\x1b[1;41m ERROR \x1b[0m " + relativePath, err.toString());
 				processResponse.writeHead(404, { "Content-Type": "text/html", "error": "File Not Found." });
@@ -120,7 +123,7 @@ exports.presenter = function (processRequest, processResponse, siteCache, etagCa
 				processResponse.writeHead(200, { "Content-Type": contentType, "Access-Control-Allow-Credentials": "True", "Access-Control-Allow-Origin": "*", "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS" });
 				if (contentType == "text/html") {
 					data = replaceTags(data.toString('utf8'), relativePath, processResponse, lang);
-				} else if (contentType == "application/javascript" && !relativePath.startsWith("libs")  && !relativePath.startsWith("common/pdf")) {
+				} else if (contentType == "application/javascript" && !relativePath.startsWith("libs") && !relativePath.startsWith("build") && !relativePath.startsWith("common/pdf")) {
 					data = data.toString('utf8');
 					if (!relativePath.startsWith("libs" && !relativePath.startsWith("common/pdf"))) { data = compressJS(data); }
 					data = replaceTags(data, relativePath, processResponse, lang);
