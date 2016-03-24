@@ -39,5 +39,6 @@ plugins
 .idea/**
 .node_repl_history
 platforms
+.vs.*
 .vs/**
 .vs/*.*
