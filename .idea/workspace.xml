@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="28a7eeb1-769e-4ced-927b-a96fe2931ea1" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/resources/ios/splash/Default-568h@2x~iphone.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/resources/ios/splash/Default-667h.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/resources/ios/splash/Default-736h.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/resources/ios/splash/Default-Landscape-736h.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/resources/ios/splash/Default-Landscape@2x~ipad.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/resources/ios/splash/Default-Landscape~ipad.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/resources/ios/splash/Default-Portrait@2x~ipad.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/resources/ios/splash/Default-Portrait~ipad.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/resources/ios/splash/Default@2x~iphone.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/resources/ios/splash/Default~iphone.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/www/img/appicon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/resources/android/icon/drawable-hdpi-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/resources/android/splash/drawable-land-hdpi-screen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/resources/android/splash/drawable-land-ldpi-screen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/resources/android/splash/drawable-land-mdpi-screen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/resources/android/splash/drawable-land-xhdpi-screen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/resources/android/splash/drawable-land-xxhdpi-screen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/resources/android/splash/drawable-land-xxxhdpi-screen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/resources/android/icon/drawable-ldpi-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/resources/android/icon/drawable-mdpi-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/resources/android/splash/drawable-port-hdpi-screen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/resources/android/splash/drawable-port-ldpi-screen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/resources/android/splash/drawable-port-mdpi-screen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/resources/android/splash/drawable-port-xhdpi-screen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/resources/android/splash/drawable-port-xxhdpi-screen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/resources/android/splash/drawable-port-xxxhdpi-screen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/resources/android/icon/drawable-xhdpi-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/resources/android/icon/drawable-xxhdpi-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/resources/android/icon/drawable-xxxhdpi-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/resources/ios/icon/icon-40.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/resources/ios/icon/icon-40@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/resources/ios/icon/icon-50.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/resources/ios/icon/icon-50@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/resources/ios/icon/icon-60.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/resources/ios/icon/icon-60@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/resources/ios/icon/icon-60@3x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/resources/ios/icon/icon-72.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/resources/ios/icon/icon-72@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/resources/ios/icon/icon-76.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/resources/ios/icon/icon-76@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/resources/ios/icon/icon-small.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/resources/ios/icon/icon-small@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/resources/ios/icon/icon-small@3x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/resources/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/resources/ios/icon/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/resources/ios/icon/icon@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/resources/splash.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/hooks/after_prepare/010_add_platform_class.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/hooks/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/app/theme/app.core.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/app/app.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/www/app.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/app/theme/app.ios.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/app/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/app/theme/app.md.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/app/theme/app.variables.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/app/theme/app.wp.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/www/cordova_plugins.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/gulpfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/app/pages/hello-ionic/hello-ionic.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/app/pages/hello-ionic/hello-ionic.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/app/pages/hello-ionic/hello-ionic.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/ionic.config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/ionic.config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/app/pages/item-details/item-details.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/app/pages/item-details/item-details.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/app/pages/item-details/item-details.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/app/pages/list/list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/app/pages/list/list.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cordova/webpack.config.js" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\.gitattributes" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\Project_Readme.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\assets\scripts\App.ts" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\assets\scripts\core\Dispatcher.ts" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\assets\scripts\core\actions\Cordova.ts" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\assets\scripts\core\actions\Routing.ts" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\assets\scripts\core\components\layout\Footer.ts" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\assets\scripts\core\components\layout\Header.ts" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\assets\scripts\core\components\layout\Layout.ts" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\assets\scripts\core\components\layout\MainSection.ts" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\assets\scripts\core\components\layout\NavBar.ts" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\assets\scripts\core\components\layout\NavBarItem.ts" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\assets\scripts\core\components\views\About.ts" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\assets\scripts\core\components\views\Home.ts" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\assets\scripts\core\routes\RouteConfig.ts" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\build.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\config.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\gruntfile.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\merges\android\scripts\android2.3-jscompat.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\merges\android\scripts\platformOverrides.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\merges\windows\scripts\platformOverrides.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\merges\windows\scripts\winstore-jscompat.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\CordovaLib\AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\CordovaLib\build.gradle" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\CordovaLib\cordova.gradle" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\CordovaLib\project.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\CordovaLib\src\org\apache\cordova\AuthenticationToken.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\CordovaLib\src\org\apache\cordova\CallbackContext.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\CordovaLib\src\org\apache\cordova\Config.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\CordovaLib\src\org\apache\cordova\ConfigXmlParser.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\CordovaLib\src\org\apache\cordova\CordovaActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\CordovaLib\src\org\apache\cordova\CordovaArgs.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\CordovaLib\src\org\apache\cordova\CordovaBridge.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\CordovaLib\src\org\apache\cordova\CordovaClientCertRequest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\CordovaLib\src\org\apache\cordova\CordovaDialogsHelper.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\CordovaLib\src\org\apache\cordova\CordovaHttpAuthHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\CordovaLib\src\org\apache\cordova\CordovaInterface.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\CordovaLib\src\org\apache\cordova\CordovaInterfaceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\CordovaLib\src\org\apache\cordova\CordovaPlugin.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\CordovaLib\src\org\apache\cordova\CordovaPreferences.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\CordovaLib\src\org\apache\cordova\CordovaResourceApi.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\CordovaLib\src\org\apache\cordova\CordovaWebView.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\CordovaLib\src\org\apache\cordova\CordovaWebViewEngine.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\CordovaLib\src\org\apache\cordova\CordovaWebViewImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\CordovaLib\src\org\apache\cordova\CoreAndroid.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\CordovaLib\src\org\apache\cordova\ExposedJsApi.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\CordovaLib\src\org\apache\cordova\ICordovaClientCertRequest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\CordovaLib\src\org\apache\cordova\ICordovaCookieManager.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\CordovaLib\src\org\apache\cordova\ICordovaHttpAuthHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\CordovaLib\src\org\apache\cordova\LOG.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\CordovaLib\src\org\apache\cordova\NativeToJsMessageQueue.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\CordovaLib\src\org\apache\cordova\PluginEntry.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\CordovaLib\src\org\apache\cordova\PluginManager.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\CordovaLib\src\org\apache\cordova\PluginResult.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\CordovaLib\src\org\apache\cordova\ResumeCallback.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\CordovaLib\src\org\apache\cordova\Whitelist.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\CordovaLib\src\org\apache\cordova\engine\SystemCookieManager.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\CordovaLib\src\org\apache\cordova\engine\SystemExposedJsApi.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\CordovaLib\src\org\apache\cordova\engine\SystemWebChromeClient.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\CordovaLib\src\org\apache\cordova\engine\SystemWebView.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\CordovaLib\src\org\apache\cordova\engine\SystemWebViewClient.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\CordovaLib\src\org\apache\cordova\engine\SystemWebViewEngine.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\android.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\assets\www\cordova-js-src\android\nativeapiprovider.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\assets\www\cordova-js-src\android\promptbasednativeapi.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\assets\www\cordova-js-src\exec.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\assets\www\cordova-js-src\platform.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\assets\www\cordova-js-src\plugin\android\app.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\assets\www\cordova_plugins.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\assets\www\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\assets\www\libs\flux\js\Flux.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\assets\www\libs\flux\js\Flux.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\assets\www\libs\ratchet\css\ratchet-theme-android.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\assets\www\libs\ratchet\css\ratchet-theme-android.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\assets\www\libs\ratchet\css\ratchet-theme-ios.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\assets\www\libs\ratchet\css\ratchet-theme-ios.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\assets\www\libs\ratchet\css\ratchet.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\assets\www\libs\ratchet\css\ratchet.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\assets\www\libs\ratchet\fonts\ratchicons.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\assets\www\libs\ratchet\fonts\ratchicons.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\assets\www\libs\ratchet\fonts\ratchicons.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\assets\www\libs\ratchet\fonts\ratchicons.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\assets\www\libs\ratchet\js\ratchet.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\assets\www\libs\ratchet\js\ratchet.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\assets\www\libs\react\js\react-dom-server.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\assets\www\libs\react\js\react-dom-server.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\assets\www\libs\react\js\react-dom.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\assets\www\libs\react\js\react-dom.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\assets\www\libs\react\js\react-with-addons.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\assets\www\libs\react\js\react-with-addons.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\assets\www\libs\react\js\react.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\assets\www\libs\react\js\react.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\assets\www\login-static\login.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\assets\www\scripts\android2.3-jscompat.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\assets\www\scripts\app.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\assets\www\scripts\app.js.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\assets\www\scripts\platformOverrides.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\build.gradle" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\cordova\.jshintrc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\cordova\Api.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\cordova\android_sdk_version" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\cordova\build" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\cordova\build.bat" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\cordova\check_reqs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\cordova\check_reqs.bat" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\cordova\clean" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\cordova\clean.bat" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\cordova\defaults.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\cordova\lib\Adb.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\cordova\lib\AndroidManifest.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\cordova\lib\AndroidProject.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\cordova\lib\ConsoleLogger.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\cordova\lib\android_sdk_version.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\cordova\lib\build.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\cordova\lib\builders\AntBuilder.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\cordova\lib\builders\GenericBuilder.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\cordova\lib\builders\GradleBuilder.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\cordova\lib\builders\builders.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\cordova\lib\check_reqs.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\cordova\lib\device.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\cordova\lib\emulator.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\cordova\lib\install-device" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\cordova\lib\install-device.bat" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\cordova\lib\install-emulator" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\cordova\lib\install-emulator.bat" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\cordova\lib\list-devices" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\cordova\lib\list-devices.bat" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\cordova\lib\list-emulator-images" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\cordova\lib\list-emulator-images.bat" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\cordova\lib\list-started-emulators" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\cordova\lib\list-started-emulators.bat" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\cordova\lib\log.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\cordova\lib\plugin-build.gradle" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\cordova\lib\pluginHandlers.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\cordova\lib\prepare.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\cordova\lib\retry.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\cordova\lib\run.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\cordova\lib\start-emulator" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\cordova\lib\start-emulator.bat" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\cordova\log" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\cordova\log.bat" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\cordova\run" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\cordova\run.bat" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\cordova\version" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\cordova\version.bat" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\platform_www\cordova-js-src\android\nativeapiprovider.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\platform_www\cordova-js-src\android\promptbasednativeapi.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\platform_www\cordova-js-src\exec.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\platform_www\cordova-js-src\platform.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\platform_www\cordova-js-src\plugin\android\app.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\platform_www\cordova.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\platform_www\cordova_plugins.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\project.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\res\drawable-hdpi\icon.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\res\drawable-land-hdpi\screen.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\res\drawable-land-ldpi\screen.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\res\drawable-land-mdpi\screen.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\res\drawable-land-xhdpi\screen.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\res\drawable-ldpi\icon.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\res\drawable-mdpi\icon.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\res\drawable-port-hdpi\screen.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\res\drawable-port-ldpi\screen.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\res\drawable-port-mdpi\screen.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\res\drawable-port-xhdpi\screen.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\res\drawable-xhdpi\icon.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\res\values\strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\res\xml\config.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\settings.gradle" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\src\md\connected\app\MainActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\src\org\apache\cordova\whitelist\WhitelistPlugin.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\platforms.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\icons\android\icon-36-ldpi.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\icons\android\icon-48-mdpi.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\icons\android\icon-72-hdpi.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\icons\android\icon-96-xhdpi.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\icons\ios\icon-40-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\icons\ios\icon-40.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\icons\ios\icon-50-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\icons\ios\icon-50.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\icons\ios\icon-57-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\icons\ios\icon-57.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\icons\ios\icon-60-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\icons\ios\icon-60-3x.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\icons\ios\icon-60.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\icons\ios\icon-72-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\icons\ios\icon-72.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\icons\ios\icon-76-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\icons\ios\icon-76.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\icons\ios\icon-small-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\icons\ios\icon-small.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\icons\windows\Square150x150Logo.scale-100.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\icons\windows\Square150x150Logo.scale-240.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\icons\windows\Square30x30Logo.scale-100.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\icons\windows\Square310x310Logo.scale-100.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\icons\windows\Square44x44Logo.scale-240.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\icons\windows\Square70x70Logo.scale-100.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\icons\windows\Square71x71Logo.scale-240.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\icons\windows\StoreLogo.scale-100.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\icons\windows\StoreLogo.scale-240.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\icons\windows\Wide310x150Logo.scale-100.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\icons\windows\Wide310x150Logo.scale-240.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\icons\wp8\ApplicationIcon.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\icons\wp8\Background.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\native\android\ant.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\screens\android\screen-hdpi-landscape.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\screens\android\screen-hdpi-portrait.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\screens\android\screen-ldpi-landscape.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\screens\android\screen-ldpi-portrait.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\screens\android\screen-mdpi-landscape.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\screens\android\screen-mdpi-portrait.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\screens\android\screen-xhdpi-landscape.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\screens\android\screen-xhdpi-portrait.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\screens\ios\screen-ipad-landscape-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\screens\ios\screen-ipad-landscape.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\screens\ios\screen-ipad-portrait-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\screens\ios\screen-ipad-portrait.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\screens\ios\screen-iphone-568h-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\screens\ios\screen-iphone-landscape-736h.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\screens\ios\screen-iphone-portrait-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\screens\ios\screen-iphone-portrait-667h.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\screens\ios\screen-iphone-portrait-736h.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\screens\ios\screen-iphone-portrait.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\screens\windows\SplashScreen.scale-100.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\screens\windows\SplashScreen.scale-240.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\screens\windows\SplashScreenPhone.scale-240.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\res\screens\wp8\SplashScreenImage.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\taco.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\tsd.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\typings\flux\flux.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\typings\react-router\history.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\typings\react-router\react-router.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\typings\react\react-addons-create-fragment.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\typings\react\react-addons-css-transition-group.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\typings\react\react-addons-linked-state-mixin.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\typings\react\react-addons-perf.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\typings\react\react-addons-pure-render-mixin.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\typings\react\react-addons-test-utils.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\typings\react\react-addons-transition-group.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\typings\react\react-addons-update.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\typings\react\react-dom.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\typings\react\react-global.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\typings\react\react.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\typings\tsd.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\common\common.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\common\main.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\common\main.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\common\webApp.controllers.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\common\webApp.main.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\common\webApp.services.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\libs\bootstrap\css\bootstrap-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\libs\bootstrap\css\bootstrap-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\libs\bootstrap\css\bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\libs\bootstrap\css\bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\libs\bootstrap\fonts\glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\libs\bootstrap\fonts\glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\libs\bootstrap\fonts\glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\libs\bootstrap\fonts\glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\libs\bootstrap\fonts\glyphicons-halflings-regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\libs\bootstrap\js\bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\libs\bootstrap\js\bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\libs\bootstrap\js\npm.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\login-static\login.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\scripts\app.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\scripts\app.js.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\scripts\platformOverrides.js" afterPath="" />
+      <change type="MOVED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\ConnectedMD.jsproj" afterPath="$PROJECT_DIR$/cordova/ConnectedMD.jsproj" />
+      <change type="MOVED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\ConnectedMD.jsproj.user" afterPath="$PROJECT_DIR$/cordova/ConnectedMD.jsproj.user" />
+      <change type="MOVED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\assets\www\cordova.js" afterPath="$PROJECT_DIR$/cordova/www/cordova.js" />
+      <change type="MOVED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\assets\www\libs\bootstrap\css\bootstrap-theme.css" afterPath="$PROJECT_DIR$/cordova/www/libs/bootstrap/css/bootstrap-theme.css" />
+      <change type="MOVED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\assets\www\libs\bootstrap\css\bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/cordova/www/libs/bootstrap/css/bootstrap-theme.min.css" />
+      <change type="MOVED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\assets\www\libs\bootstrap\css\bootstrap.css" afterPath="$PROJECT_DIR$/cordova/www/libs/bootstrap/css/bootstrap.css" />
+      <change type="MOVED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\assets\www\libs\bootstrap\css\bootstrap.min.css" afterPath="$PROJECT_DIR$/cordova/www/libs/bootstrap/css/bootstrap.min.css" />
+      <change type="MOVED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\assets\www\libs\bootstrap\fonts\glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/cordova/www/libs/bootstrap/fonts/glyphicons-halflings-regular.eot" />
+      <change type="MOVED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\assets\www\libs\bootstrap\fonts\glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/cordova/www/libs/bootstrap/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MOVED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\assets\www\libs\bootstrap\fonts\glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/cordova/www/libs/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="MOVED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\assets\www\libs\bootstrap\fonts\glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/cordova/www/libs/bootstrap/fonts/glyphicons-halflings-regular.woff" />
+      <change type="MOVED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\assets\www\libs\bootstrap\fonts\glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/cordova/www/libs/bootstrap/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="MOVED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\assets\www\libs\bootstrap\js\bootstrap.js" afterPath="$PROJECT_DIR$/cordova/www/libs/bootstrap/js/bootstrap.js" />
+      <change type="MOVED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\assets\www\libs\bootstrap\js\bootstrap.min.js" afterPath="$PROJECT_DIR$/cordova/www/libs/bootstrap/js/bootstrap.min.js" />
+      <change type="MOVED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\platforms\android\assets\www\libs\bootstrap\js\npm.js" afterPath="$PROJECT_DIR$/cordova/www/libs/bootstrap/js/npm.js" />
+      <change type="MOVED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\css\_flaticon.scss" afterPath="$PROJECT_DIR$/cordova/www/css/_flaticon.scss" />
+      <change type="MOVED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\css\animate.min.css" afterPath="$PROJECT_DIR$/cordova/www/css/animate.min.css" />
+      <change type="MOVED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\css\app.css" afterPath="$PROJECT_DIR$/cordova/www/css/app.css" />
+      <change type="MOVED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\css\features.css" afterPath="$PROJECT_DIR$/cordova/www/css/features.css" />
+      <change type="MOVED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\css\medical_icons.css" afterPath="$PROJECT_DIR$/cordova/www/css/medical_icons.css" />
+      <change type="MOVED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\css\pe-icon-7-stroke.css" afterPath="$PROJECT_DIR$/cordova/www/css/pe-icon-7-stroke.css" />
+      <change type="MOVED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\fonts\Flaticon.eot" afterPath="$PROJECT_DIR$/cordova/www/fonts/Flaticon.eot" />
+      <change type="MOVED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\fonts\Flaticon.svg" afterPath="$PROJECT_DIR$/cordova/www/fonts/Flaticon.svg" />
+      <change type="MOVED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\fonts\Flaticon.ttf" afterPath="$PROJECT_DIR$/cordova/www/fonts/Flaticon.ttf" />
+      <change type="MOVED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\fonts\Flaticon.woff" afterPath="$PROJECT_DIR$/cordova/www/fonts/Flaticon.woff" />
+      <change type="MOVED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\fonts\Pe-icon-7-stroke.eot" afterPath="$PROJECT_DIR$/cordova/www/fonts/Pe-icon-7-stroke.eot" />
+      <change type="MOVED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\fonts\Pe-icon-7-stroke.svg" afterPath="$PROJECT_DIR$/cordova/www/fonts/Pe-icon-7-stroke.svg" />
+      <change type="MOVED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\fonts\Pe-icon-7-stroke.ttf" afterPath="$PROJECT_DIR$/cordova/www/fonts/Pe-icon-7-stroke.ttf" />
+      <change type="MOVED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\fonts\Pe-icon-7-stroke.woff" afterPath="$PROJECT_DIR$/cordova/www/fonts/Pe-icon-7-stroke.woff" />
+      <change type="MOVED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\images\farm-bg.jpg" afterPath="$PROJECT_DIR$/cordova/www/img/farm-bg.jpg" />
+      <change type="MOVED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\libs\angular-animate\js\angular-animate.min.js" afterPath="$PROJECT_DIR$/cordova/www/libs/angular-animate/js/angular-animate.min.js" />
+      <change type="MOVED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\libs\angular-ui-router\js\angular-ui-router.min.js" afterPath="$PROJECT_DIR$/cordova/www/libs/angular-ui-router/js/angular-ui-router.min.js" />
+      <change type="MOVED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\libs\angular\css\angular-csp.css" afterPath="$PROJECT_DIR$/cordova/www/libs/angular/css/angular-csp.css" />
+      <change type="MOVED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\libs\angular\js\angular.min.js" afterPath="$PROJECT_DIR$/cordova/www/libs/angular/js/angular.min.js" />
+      <change type="MOVED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\libs\font-awesome\css\font-awesome.css" afterPath="$PROJECT_DIR$/cordova/www/libs/font-awesome/css/font-awesome.css" />
+      <change type="MOVED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\libs\font-awesome\css\font-awesome.min.css" afterPath="$PROJECT_DIR$/cordova/www/libs/font-awesome/css/font-awesome.min.css" />
+      <change type="MOVED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\libs\font-awesome\fonts\FontAwesome.otf" afterPath="$PROJECT_DIR$/cordova/www/libs/font-awesome/fonts/FontAwesome.otf" />
+      <change type="MOVED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\libs\font-awesome\fonts\fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/cordova/www/libs/font-awesome/fonts/fontawesome-webfont.eot" />
+      <change type="MOVED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\libs\font-awesome\fonts\fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/cordova/www/libs/font-awesome/fonts/fontawesome-webfont.svg" />
+      <change type="MOVED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\libs\font-awesome\fonts\fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/cordova/www/libs/font-awesome/fonts/fontawesome-webfont.ttf" />
+      <change type="MOVED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\libs\font-awesome\fonts\fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/cordova/www/libs/font-awesome/fonts/fontawesome-webfont.woff" />
+      <change type="MOVED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\libs\font-awesome\fonts\fontawesome-webfont.woff2" afterPath="$PROJECT_DIR$/cordova/www/libs/font-awesome/fonts/fontawesome-webfont.woff2" />
+      <change type="MOVED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\libs\jquery\js\jquery.min.js" afterPath="$PROJECT_DIR$/cordova/www/libs/jquery/js/jquery.min.js" />
+      <change type="MOVED" beforePath="C:\Users\Namdascious\Desktop\Projects\ConnectedMD\ConnectedMD\www\libs\jquery\js\jquery.slim.min.js" afterPath="$PROJECT_DIR$/cordova/www/libs/jquery/js/jquery.slim.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ConnectedMD.sln" afterPath="$PROJECT_DIR$/ConnectedMD.sln" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cordova/www/index.html" afterPath="$PROJECT_DIR$/cordova/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/presenter.js" afterPath="$PROJECT_DIR$/presenter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
+    <ignored path="ConnectedMD.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="ConnectedMD" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-18.6" vertical-offset="326" max-vertical-offset="986">
+              <caret line="52" column="13" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cordova/www/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.0522274" vertical-offset="2375" max-vertical-offset="8228">
+              <caret line="180" column="24" selection-start-line="180" selection-start-column="24" selection-end-line="180" selection-end-column="24" />
+              <folding>
+                <element signature="n#style#0;n#hr#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h3#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConnectedMD.sln" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ConnectedMD.sln">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1462">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/ConnectedMD/www/forms/pediatrician/month-02-visit-v001.html" />
+        <option value="$PROJECT_DIR$/ConnectedMD/www/index.html" />
+        <option value="$PROJECT_DIR$/ConnectedMD/www/login-static/signup.html" />
+        <option value="$PROJECT_DIR$/ConnectedMD/www/login-static/reset-password.html" />
+        <option value="$PROJECT_DIR$/ConnectedMD/www/css/medical_icons.css" />
+        <option value="$PROJECT_DIR$/ConnectedMD/www/css/features.css" />
+        <option value="$PROJECT_DIR$/ConnectedMD/www/login-static/login.html" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/cordova/www/index.html" />
+        <option value="$PROJECT_DIR$/presenter.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1456" />
+    <option name="height" value="876" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ConnectedMD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ConnectedMD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ConnectedMD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ConnectedMD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ConnectedMD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cordova" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ConnectedMD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ConnectedMD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cordova" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ConnectedMD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ConnectedMD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ConnectedMD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="FullScreen" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="Chrome" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="28a7eeb1-769e-4ced-927b-a96fe2931ea1" name="Default" comment="" />
+      <created>1457557074842</created>
+      <option name="number" value="Default" />
+      <updated>1457557074842</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2496474" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ConnectedMD.sln">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1462">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/presenter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.5199409" vertical-offset="3981" max-vertical-offset="4658">
+          <caret line="94" column="19" selection-start-line="94" selection-start-column="19" selection-end-line="94" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.6" vertical-offset="326" max-vertical-offset="986">
+          <caret line="52" column="13" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cordova/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0522274" vertical-offset="2375" max-vertical-offset="8228">
+          <caret line="180" column="24" selection-start-line="180" selection-start-column="24" selection-end-line="180" selection-end-column="24" />
+          <folding>
+            <element signature="n#style#0;n#hr#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

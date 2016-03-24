@@ -422,18 +422,26 @@
     padding:10px 0 20px 0;
     color: #ffffff;
     text-align:center;
-    padding-top: 10vh;
+    padding-top: 5vh;
 }
 
-.invite-prompt .invite-icon{
+.invite-prompt .invite-title{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-content:center;
+}
+
+.invite-prompt .invite-title .invite-icon{
     font-size:4rem;
     margin:0px !important;
+    margin-top: 13px !important;
+    margin-right:15px !important;
 }
 
 .invite-card{
     max-width: 650px !important;
     width: 100%;
-    height: 200px;
     border-radius: 3px;
     color: rgba(0,0,0, 0.87);
     background: #fff;
@@ -461,14 +469,14 @@
     font-size:2rem;
 }
 
-.invite-card .invite-card-nav .icon-title{
-    margin-top: -19px;
+.icon-title{
     width: 100%;
     text-align: center;
 }
 
 .icon-title .practice-name{
-    font-size:16px; margin-left: -36px; color: #559292; font-weight: 600;
+    font-size:16px; color: #559292;
+    margin-top:10px;
 }
 
 .invite-card .invite-card-body{
@@ -486,6 +494,70 @@
 .invite-card-body .form-name-container .form-name{
     color: #09A5A5;
     font-size:18px;
+}
+
+.invite-form{
+    width:100%;
+    max-width:600px;
+    /*padding:40px 0;*/
+    padding-bottom:20px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.invite-form .invite-input-box{
+    margin-bottom:40px;
+}
+
+.invite-form .invite-input-box .invite-input{
+    background-color: transparent !important;
+    border: none;
+    border-bottom: 1px solid #86C5C5;
+    color: #559292 !important;
+    border-radius: 0px;
+}
+
+.invite-form .invite-submit-box{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    padding:20px 20px;
+}
+.invite-form .invite-submit-box .invite-btn-submit{
+    background-color: #417082;
+    border: 1px solid #417082;
+    box-shadow: 0 1px 1px 1px #225A67;
+}
+
+.invite-form .invite-terms-box{
+    width:100%;
+    text-align:center;
+    color: #949494;
+}
+
+.invite-form .invite-terms-box .invite-terms-link{
+    color: #00ABA4;
+}
+
+.invite-input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #c3c3c3;
+}
+
+.invite-input::-moz-placeholder{
+    color: #c3c3c3;
+}
+
+.invite-input:-ms-input-placeholder {
+    color: #c3c3c3;
+}
+
+.signup-input:-moz-placeholder {
+    color: #c3c3c3;
+}
+
+.signup-forgot-password{
+    font-size: 1.5rem;
+    color: #00D3FF;
 }
 
 @media (min-width:992px){
