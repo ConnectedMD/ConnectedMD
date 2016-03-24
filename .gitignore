@@ -41,3 +41,5 @@ plugins
 platforms
 .vs/**
 .vs/*.*
+.idea/workspace.xml
+.idea/workspace.xml
