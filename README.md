@@ -1,24 +1,37 @@
 # ConnectedMD
 
 # Setup
-Install latest node
+Install latest node, version 5.6.0 or later
 
-`npm install -g cordova`
+`npm install -g cordova`, version 6.0.0 or later
 
 `npm install -g gulp-cli`
 
 `npm install -g grunt-cli`
 
 # Updating components
-run `npm update` in the project root folder. This will update components used for node.
+change to the ConnectedMD folder
 
-run `npm update` in the `cordova` folder. This will update components used for cordova and web.
+run `npm update`. This will update components used for node.
 
-# Running The Web Server as node server
+change to the cordova folder
+
+run `npm update`. This will update components used for cordova and web.
+
+# Running The Web Server as ionic server
+
+change to the cordova folder
 
 run `ionic serve`, this will start the local server and launch the browser. It will also create a www/build folder from the app folder.
 
 # Running The Web Server as node server
+
+change to the cordova folder
+
+run `ionic serve`, this will start the local server. Then cancel ionic. It will also create a www/build folder from the app folder.
+
+change to the ConnectedMD folder
+
 run `node server.js port=80 env=dev api=http://localhost:8080/`
 
 port => the port you want to use for local development. If you are running IIS, port 80 will not be available.
