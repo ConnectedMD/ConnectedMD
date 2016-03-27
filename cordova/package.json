@@ -27,5 +27,5 @@
     "strip-sourcemap-loader": "0.0.1"
   },
   "name": "connectedmd",
-  "description": "ConnectedMD: An Ionic project"
+  "description": "ConnectedMD"
 }

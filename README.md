@@ -9,14 +9,14 @@ Install latest node, version 5.6.0 or later
 
 `npm install -g grunt-cli`
 
+change to the ConnectedMD folder. Run `npm install`. This will update components used for node.
+
+change to the cordova folder. Run `npm install`. This will update components used for cordova and web.
+
 # Updating components
-change to the ConnectedMD folder
+change to the ConnectedMD folder. Run `npm update`. This will update components used for node.
 
-run `npm update`. This will update components used for node.
-
-change to the cordova folder
-
-run `npm update`. This will update components used for cordova and web.
+change to the cordova folder. Run `npm update`. This will update components used for cordova and web.
 
 # Running The Web Server as ionic server
 
