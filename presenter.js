@@ -112,7 +112,7 @@ exports.presenter = function (processRequest, processResponse, siteCache, etagCa
 		//-- read file
       var basePath = "cordova/www/";
       console.log(relativePath);
-      if (relativePath.indexOf("plugins/") > 0) { basePath = "plugins"; }
+      if (relativePath.indexOf("plugins/") > 0) { basePath = "cordova/"; }
 		fs.readFile(basePath + relativePath, function (err, data) {
 			if (err) {
 				console.log("\x1b[1;41m ERROR \x1b[0m " + relativePath, err.toString());
@@ -123,6 +123,8 @@ exports.presenter = function (processRequest, processResponse, siteCache, etagCa
 				processResponse.writeHead(200, { "Content-Type": contentType, "Access-Control-Allow-Credentials": "True", "Access-Control-Allow-Origin": "*", "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS" });
 				if (contentType == "text/html") {
 					data = replaceTags(data.toString('utf8'), relativePath, processResponse, lang);
+				} else if (contentType == "application/javascript" && relativePath.startsWith("plugins")) {
+               processResponse.end(data);
 				} else if (contentType == "application/javascript" && !relativePath.startsWith("libs") && !relativePath.startsWith("build") && !relativePath.startsWith("common/pdf")) {
 					data = data.toString('utf8');
 					if (!relativePath.startsWith("libs" && !relativePath.startsWith("common/pdf"))) { data = compressJS(data); }

@@ -25,19 +25,23 @@ gulp.task('run:before', [shouldWatch ? 'watch' : 'build']);
  * changes, but you are of course welcome (and encouraged) to customize your
  * build however you see fit.
  */
-var buildBrowserify = require('ionic-gulp-browserify-es2015');
+//var buildBrowserify = require('ionic-gulp-browserify-es2015');
+var buildWebpack = require('ionic-gulp-webpack-build');
 var buildSass = require('ionic-gulp-sass-build');
 var copyHTML = require('ionic-gulp-html-copy');
 var copyFonts = require('ionic-gulp-fonts-copy');
 var copyScripts = require('ionic-gulp-scripts-copy');
 
-gulp.task('watch', ['sass', 'html', 'fonts', 'scripts'], function(){
+//gulp.task('watch', ['sass', 'html', 'fonts', 'scripts'], function(){
+gulp.task('watch', ['sass', 'html', 'fonts'], function(){
   gulpWatch('app/**/*.scss', function(){ gulp.start('sass'); });
   gulpWatch('app/**/*.html', function(){ gulp.start('html'); });
-  return buildBrowserify({ watch: true });
+  //return buildBrowserify({ watch: true });
+  return buildWebpack({ watch: true });
 });
 
-gulp.task('build', ['sass', 'html', 'fonts', 'scripts'], buildBrowserify);
+//gulp.task('build', ['sass', 'html', 'fonts'], buildBrowserify);
+gulp.task('build', ['sass', 'html', 'fonts'], buildWebpack);
 gulp.task('sass', buildSass);
 gulp.task('html', copyHTML);
 gulp.task('fonts', copyFonts);

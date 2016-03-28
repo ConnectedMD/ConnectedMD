@@ -28,21 +28,20 @@ bld
 # Dependency directory
 node_modules
 bower_components
-plugins
-#ConnectedMD/www/libs/**
+cordova/plugins
+cordova/platforms
+.DS_Store
 
 # Optional npm cache directory
 .npm
 
 # Optional REPL history
+.node_repl_history
+.idea
 .idea/*.*
 .idea/**
-.node_repl_history
-platforms
+.vs
 .vs.*
 .vs/**
 .vs/*.*
-.idea/workspace.xml
-.idea/workspace.xml
-.idea/workspace.xml
 .idea/workspace.xml
