@@ -1,7 +1,9 @@
 import {App, IonicApp, Platform, MenuController} from 'ionic-angular';
 import {StatusBar} from 'ionic-native';
-import {HelloIonicPage} from './pages/hello-ionic/hello-ionic';
-import {ListPage} from './pages/list/list';
+import {DashboardPage} from './pages/dashboard/dashboard';
+import {FormsPage} from './pages/forms/forms';
+import {PhysicianLocatorPage} from './pages/physician/locator/search';
+import {PatientAppointmentPage} from './pages/patient/appointments/list';
 
 
 @App({
@@ -21,13 +23,16 @@ class MyApp {
     this.initializeApp();
 
     // set our app's pages
+    // TODO: diffrent menus for doctors and patients
     this.pages = [
-      { title: 'Hello Ionic', component: HelloIonicPage },
-      { title: 'My First List', component: ListPage }
+      { title: 'Dashboard', component: DashboardPage },
+      { title: 'Appointments', component: PatientAppointmentPage },
+      { title: 'Forms', component: FormsPage },
+      { title: 'Find a Physician', component: PhysicianLocatorPage },
     ];
 
-    // make HelloIonicPage the root (or first) page
-    this.rootPage = HelloIonicPage;
+    // make dashboard the root (or first) page
+    this.rootPage = DashboardPage;
   }
 
   initializeApp() {

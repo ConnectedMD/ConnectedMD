@@ -1,4 +1,5 @@
+@echo off
 cd cordova
 call gulp build
 cd..
-node server.js api=http://localhost:8080/
+call node server.js api=http://localhost:8080/

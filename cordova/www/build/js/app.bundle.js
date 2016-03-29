@@ -3185,9 +3185,13 @@
 
 	var _ionicNative = __webpack_require__(362);
 
-	var _helloIonic = __webpack_require__(410);
+	var _dashboard = __webpack_require__(410);
 
-	var _list = __webpack_require__(411);
+	var _forms = __webpack_require__(411);
+
+	var _search = __webpack_require__(412);
+
+	var _list = __webpack_require__(413);
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -3212,10 +3216,11 @@
 	    this.initializeApp();
 
 	    // set our app's pages
-	    this.pages = [{ title: 'Hello Ionic', component: _helloIonic.HelloIonicPage }, { title: 'My First List', component: _list.ListPage }];
+	    // TODO: diffrent menus for doctors and patients
+	    this.pages = [{ title: 'Dashboard', component: _dashboard.DashboardPage }, { title: 'Appointments', component: _list.PatientAppointmentPage }, { title: 'Forms', component: _forms.FormsPage }, { title: 'Find a Physician', component: _search.PhysicianLocatorPage }];
 
-	    // make HelloIonicPage the root (or first) page
-	    this.rootPage = _helloIonic.HelloIonicPage;
+	    // make dashboard the root (or first) page
+	    this.rootPage = _dashboard.DashboardPage;
 	  }
 
 	  _createClass(MyApp, [{
@@ -68292,7 +68297,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.HelloIonicPage = undefined;
+	exports.DashboardPage = undefined;
 
 	var _dec, _class;
 
@@ -68300,10 +68305,10 @@
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-	var HelloIonicPage = exports.HelloIonicPage = (_dec = (0, _ionicAngular.Page)({
-	  templateUrl: 'build/pages/hello-ionic/hello-ionic.html'
-	}), _dec(_class = function HelloIonicPage() {
-	  _classCallCheck(this, HelloIonicPage);
+	var DashboardPage = exports.DashboardPage = (_dec = (0, _ionicAngular.Page)({
+	  templateUrl: 'build/pages/dashboard/dashboard.html'
+	}), _dec(_class = function DashboardPage() {
+	  _classCallCheck(this, DashboardPage);
 	}) || _class);
 
 /***/ },
@@ -68315,7 +68320,53 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.ListPage = undefined;
+	exports.FormsPage = undefined;
+
+	var _dec, _class;
+
+	var _ionicAngular = __webpack_require__(5);
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var FormsPage = exports.FormsPage = (_dec = (0, _ionicAngular.Page)({
+	  templateUrl: 'build/pages/forms/forms.html'
+	}), _dec(_class = function FormsPage() {
+	  _classCallCheck(this, FormsPage);
+	}) || _class);
+
+/***/ },
+/* 412 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.PhysicianLocatorPage = undefined;
+
+	var _dec, _class;
+
+	var _ionicAngular = __webpack_require__(5);
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var PhysicianLocatorPage = exports.PhysicianLocatorPage = (_dec = (0, _ionicAngular.Page)({
+	  templateUrl: 'build/pages/physician/locator/search.html'
+	}), _dec(_class = function PhysicianLocatorPage() {
+	  _classCallCheck(this, PhysicianLocatorPage);
+	}) || _class);
+
+/***/ },
+/* 413 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.PatientAppointmentPage = undefined;
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -68323,22 +68374,22 @@
 
 	var _ionicAngular = __webpack_require__(5);
 
-	var _itemDetails = __webpack_require__(412);
+	var _itemDetails = __webpack_require__(414);
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-	var ListPage = exports.ListPage = (_dec = (0, _ionicAngular.Page)({
-	  templateUrl: 'build/pages/list/list.html'
+	var PatientAppointmentPage = exports.PatientAppointmentPage = (_dec = (0, _ionicAngular.Page)({
+	  templateUrl: 'build/pages/patient/appointments/list.html'
 	}), _dec(_class = function () {
-	  _createClass(ListPage, null, [{
+	  _createClass(PatientAppointmentPage, null, [{
 	    key: 'parameters',
 	    get: function get() {
 	      return [[_ionicAngular.NavController], [_ionicAngular.NavParams]];
 	    }
 	  }]);
 
-	  function ListPage(nav, navParams) {
-	    _classCallCheck(this, ListPage);
+	  function PatientAppointmentPage(nav, navParams) {
+	    _classCallCheck(this, PatientAppointmentPage);
 
 	    this.nav = nav;
 
@@ -68357,7 +68408,7 @@
 	    }
 	  }
 
-	  _createClass(ListPage, [{
+	  _createClass(PatientAppointmentPage, [{
 	    key: 'itemTapped',
 	    value: function itemTapped(event, item) {
 	      this.nav.push(_itemDetails.ItemDetailsPage, {
@@ -68366,11 +68417,11 @@
 	    }
 	  }]);
 
-	  return ListPage;
+	  return PatientAppointmentPage;
 	}()) || _class);
 
 /***/ },
-/* 412 */
+/* 414 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
