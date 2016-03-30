@@ -43,7 +43,7 @@ if (process.argv.length > 2) {
         if (val.indexOf("=") > 0) {
             var param = val.split("=");
 			if (param[0].toLowerCase() === "cluster") { clusterForks = parseInt(param[1]); }
-			if (param[0].toLowerCase() === "port") { port = parseInt(param[1]); }
+			if (param[0].toLowerCase() === "port") { if (param[1] !== "") { port = parseInt(param[1]); } }
 			if (param[0].toLowerCase() === "api") { apiUrl = param[1]; }
         }
     });
