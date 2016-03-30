@@ -1,9 +1,10 @@
 import {Page, NavController, NavParams} from 'ionic-angular';
-import {ItemDetailsPage} from '../../item-details/item-details';
+import {AppointmentItemsPage} from './items';
+import {AppointmentDetailsPage} from './details';
 
 
 @Page({
-  templateUrl: 'build/pages/patient/appointments/list.html'
+  templateUrl: '/build/pages/patient/appointments/list.html'
 })
 export class PatientAppointmentPage {
   static get parameters() {
@@ -30,7 +31,7 @@ export class PatientAppointmentPage {
   }
 
   itemTapped(event, item) {
-     this.nav.push(ItemDetailsPage, {
+     this.nav.push(AppointmentItemsPage, {
        item: item
      });
   }

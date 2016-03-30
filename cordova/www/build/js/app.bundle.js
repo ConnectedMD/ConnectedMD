@@ -68374,12 +68374,14 @@
 
 	var _ionicAngular = __webpack_require__(5);
 
-	var _itemDetails = __webpack_require__(414);
+	var _items = __webpack_require__(414);
+
+	var _details = __webpack_require__(415);
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 	var PatientAppointmentPage = exports.PatientAppointmentPage = (_dec = (0, _ionicAngular.Page)({
-	  templateUrl: 'build/pages/patient/appointments/list.html'
+	  templateUrl: '/build/pages/patient/appointments/list.html'
 	}), _dec(_class = function () {
 	  _createClass(PatientAppointmentPage, null, [{
 	    key: 'parameters',
@@ -68411,7 +68413,7 @@
 	  _createClass(PatientAppointmentPage, [{
 	    key: 'itemTapped',
 	    value: function itemTapped(event, item) {
-	      this.nav.push(_itemDetails.ItemDetailsPage, {
+	      this.nav.push(_items.AppointmentItemsPage, {
 	        item: item
 	      });
 	    }
@@ -68429,7 +68431,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.ItemDetailsPage = undefined;
+	exports.AppointmentItemsPage = undefined;
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -68439,25 +68441,65 @@
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-	var ItemDetailsPage = exports.ItemDetailsPage = (_dec = (0, _ionicAngular.Page)({
-	  templateUrl: 'build/pages/item-details/item-details.html'
+	var AppointmentItemsPage = exports.AppointmentItemsPage = (_dec = (0, _ionicAngular.Page)({
+	  templateUrl: '/build/pages/patient/appointments/items.html'
 	}), _dec(_class = function () {
-	  _createClass(ItemDetailsPage, null, [{
+	  _createClass(AppointmentItemsPage, null, [{
 	    key: 'parameters',
 	    get: function get() {
 	      return [[_ionicAngular.NavController], [_ionicAngular.NavParams]];
 	    }
 	  }]);
 
-	  function ItemDetailsPage(nav, navParams) {
-	    _classCallCheck(this, ItemDetailsPage);
+	  function AppointmentItemsPage(nav, navParams) {
+	    _classCallCheck(this, AppointmentItemsPage);
 
 	    this.nav = nav;
 	    // If we navigated to this page, we will have an item available as a nav param
 	    this.selectedItem = navParams.get('item');
 	  }
 
-	  return ItemDetailsPage;
+	  return AppointmentItemsPage;
+	}()) || _class);
+
+/***/ },
+/* 415 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.AppointmentDetailsPage = undefined;
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _dec, _class;
+
+	var _ionicAngular = __webpack_require__(5);
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var AppointmentDetailsPage = exports.AppointmentDetailsPage = (_dec = (0, _ionicAngular.Page)({
+	  templateUrl: 'build/pages/patient/appointments/details.html'
+	}), _dec(_class = function () {
+	  _createClass(AppointmentDetailsPage, null, [{
+	    key: 'parameters',
+	    get: function get() {
+	      return [[_ionicAngular.NavController], [_ionicAngular.NavParams]];
+	    }
+	  }]);
+
+	  function AppointmentDetailsPage(nav, navParams) {
+	    _classCallCheck(this, AppointmentDetailsPage);
+
+	    this.nav = nav;
+	    // If we navigated to this page, we will have an item available as a nav param
+	    this.selectedItem = navParams.get('item');
+	  }
+
+	  return AppointmentDetailsPage;
 	}()) || _class);
 
 /***/ }
