@@ -43,6 +43,20 @@ env => controls debuging, logging and settings. use `dev`, `qa`, `prod`.
 # VSCode / Visual Studio Community 2015
 You can use VSCode if you are just working with web code. To debug mobile, use Visual Studio.
 
+# VS Code Addins
+
+https://marketplace.visualstudio.com/items?itemName=vsmobile.cordova-tools
+
+https://marketplace.visualstudio.com/items?itemName=sozercan.slack
+
+https://marketplace.visualstudio.com/items?itemName=austin.vscode-twitter
+
+https://marketplace.visualstudio.com/items?itemName=moozzyk.Arduino
+
+https://marketplace.visualstudio.com/items?itemName=magicstack.MagicPython
+
+https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion
+
 
 # ionic startup messages
 ♬ ♫ ♬ ♫  Your Ionic app is ready to go! ♬ ♫ ♬ ♫
