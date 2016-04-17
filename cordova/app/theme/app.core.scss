@@ -8,5 +8,32 @@
 // App Shared Sass variables belong in app.variables.scss.
 
 //@import "../pages/hello-ionic/hello-ionic";
-
 //@import "../pages/item-details/item-details";
+@import "../pages/dashboard/dashboard";
+
+.toolbar{
+    height:300px !important;
+}
+
+.toolbar .toolbar-background{
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: #7ececd !important;
+    background: #7ececd !important;
+}
+
+.toolbar-title{
+    font-size: 3.5rem;
+    color: #fff;
+    padding-top: 7px;
+}
+
+.swiper-slide {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    align-items:flex-start;
+}

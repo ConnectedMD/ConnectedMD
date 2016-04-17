@@ -3,30 +3,98 @@
   <button menuToggle>
     <ion-icon name="menu"></ion-icon>
   </button>
-  <ion-title>ConnectedMD Dashboard</ion-title>
+  <ion-title>
+    <i class="pe-7s-plugin"></i>
+  </ion-title>
 </ion-navbar>
 
+<div class="dash-nav-container">
+    <div class="nav-container">
+      <ul class="nav nav-icons" role="tablist">
+          <li class="dash-tabs" [(class.active)]="item.active" *ngFor="#item of tabs">
+              <a role="tab" data-toggle="tab" (click)="setActiveTab($event, item)">
+                  <i class="{{item.iconClass}} dash-icon"></i><br> 
+                  {{item.name}}
+              </a>
+          </li>
+      </ul>
+    </div>
+    <hr style="background-color:rgba(111, 111, 111, 0.12);">
+</div>
 
-<ion-content padding class="dashboard">
-
-   <div class="panel panel-default col-lg-3">
-      <div class="panel-heading">
-         <h3>Appointments</h3>
-      </div>
-      <div class="panel-body">
-      </div>
-      <div class="panel-footer">
-      </div>
-   </div>
-
-   <div class="panel panel-default col-lg-3">
-      <div class="panel-heading">
-         <h3>Forms</h3>
-      </div>
-      <div class="panel-body">
-      </div>
-      <div class="panel-footer">
-      </div>
-   </div>
-
+<ion-content padding class="dashboard-page">
+  <ion-slides id="dashboard_slider" options="slideOptions" (change)="onSlideChanged(slides)">
+      <ion-slide>
+          <div class="dashboard-slide-content">
+            <div class="row dash-card-row" *ngFor="#activity of content.activities">
+              <div class="col-sm-12">
+                <div class="dash-card-activity dash-item">
+                  <div class="dash-card-title">
+                    <div class="row">
+                      <div class="col-xs-10">
+                        <h2>{{activity.title}}</h2>
+                        <span class="sub-title">{{activity.time | date:'medium'}}</span>
+                      </div>
+                      <div class="col-xs-2">
+                        <i class="pe-7s-hourglass pull-right dash-title-icon"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dash-card-content">
+                    <div>{{activity.description}}</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </ion-slide>
+      <ion-slide>
+        <div class="dashboard-slide-content">
+            <div class="row dash-card-row" *ngFor="#appointment of content.appointments">
+              <div class="col-sm-12">
+                <div class="dash-card-appointments dash-item">
+                  <div class="dash-card-title">
+                    <div class="row">
+                      <div class="col-xs-10">
+                        <h2>{{appointment.title}}</h2>
+                        <span class="sub-title">{{appointment.time | date:'medium'}}</span>
+                      </div>
+                      <div class="col-xs-2">
+                        <i class="pe-7s-clock pull-right dash-title-icon"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dash-card-content">
+                    <div>{{appointment.description}}</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </ion-slide>
+      <ion-slide>
+        <div class="dashboard-slide-content">
+            <div class="row dash-card-row" *ngFor="#form of content.forms">
+              <div class="col-sm-12">
+                <div class="dash-card-forms dash-item">
+                  <div class="dash-card-title">
+                    <div class="row">
+                      <div class="col-xs-10">
+                        <h2>{{form.title}}</h2>
+                        <span class="sub-title">{{form.practice}}</span>
+                      </div>
+                      <div class="col-xs-2">
+                        <i class="pe-7s-note2 pull-right dash-title-icon"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dash-card-content">
+                    <div>Recieved: {{form.recieved | date:'medium'}}</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </ion-slide>
+    </ion-slides>
 </ion-content>

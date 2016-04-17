@@ -20,9 +20,19 @@
     "ionic-gulp-fonts-copy": "^1.0.0",
     "ionic-gulp-html-copy": "^1.0.0",
     "ionic-gulp-sass-build": "^1.0.0",
-    "ionic-gulp-webpack-build": "^1.0.0",
+    "ionic-gulp-webpack": "^1.0.0",
+    "ionic-gulp-scripts-copy": "*",
+    "ionic-native": "*",
     "strip-sourcemap-loader": "0.0.1"
   },
   "name": "connectedmd",
-  "description": "Connected.MD: Web And Mobile"
+  "description": "Connected.MD: Web And Mobile",
+  "cordovaPlugins": [],
+  "cordovaPlatforms": [
+    "ios",
+    {
+      "platform": "android",
+      "locator": "windows"
+    }
+  ]
 }
