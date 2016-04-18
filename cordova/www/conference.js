@@ -8,9 +8,8 @@ function showVolume(el, volume) {
     el.value = volume;
 }
 
-var conferenceInit = function() {
-    // grab the room from the URL
-    room = location.search && location.search.split('?')[1];
+var conferenceInit = function(roomName) {
+    room = roomName;
     button = $("#screenShareButton");
 
     // create our webrtc connection
@@ -169,10 +168,9 @@ var conferenceInit = function() {
 
     // Since we use this twice we put it here
     function setRoom(name) {
-        document.querySelector('form').remove();
-        document.getElementById('title').innerText = 'Room: ' + name;
-        document.getElementById('subTitle').innerText =  'Link to join: ' + location.href;
-        $('body').addClass('active');
+        $("#roomTitle").html("Room: " + name);
+        $("roomSubTitle").html("Link to join: " + location.href);
+        $("body").addClass('active');
     }
 
     var setButton = function (bool) {

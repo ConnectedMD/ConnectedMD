@@ -3219,7 +3219,7 @@
 
 	    // set our app's pages
 	    // TODO: diffrent menus for doctors and patients
-	    this.pages = [{ title: 'Dashboard', component: _dashboard.DashboardPage }, { title: 'Appointments', component: _list.PatientAppointmentPage }, { title: 'Forms', component: _forms.FormsPage }, { title: 'Find a Physician', component: _search.PhysicianLocatorPage }, { title: 'Video', component: _video.VideoPage }];
+	    this.pages = [{ title: 'Dashboard', component: _dashboard.DashboardPage, params: {}, opt: {} }, { title: 'Appointments', component: _list.PatientAppointmentPage, params: {}, opt: {} }, { title: 'Forms', component: _forms.FormsPage, params: {}, opt: {} }, { title: 'Find a Physician', component: _search.PhysicianLocatorPage, params: {}, opt: {} }, { title: 'Video', component: _video.VideoPage, params: { room: "test" }, opt: { animate: true } }];
 
 	    // make dashboard the root (or first) page
 	    this.rootPage = _dashboard.DashboardPage;
@@ -3241,7 +3241,8 @@
 	      this.menu.close();
 	      // navigate to the new page if it is not the current page
 	      var nav = this.app.getComponent('nav');
-	      nav.setRoot(page.component);
+	      //nav.push(page.component, page.params, page.opt );
+	      nav.setRoot(page.component, page.params, page.opt);
 	    }
 	  }]);
 
@@ -68656,10 +68657,15 @@
 	    _classCallCheck(this, VideoPage);
 
 	    this.nav = nav;
-	    // If we navigated to this page, we will have an item available as a nav param
-	    this.selectedItem = navParams.get('item');
-	    window.conferenceInit();
+	    this.params = navParams.data;
 	  }
+
+	  _createClass(VideoPage, [{
+	    key: 'onPageLoaded',
+	    value: function onPageLoaded() {
+	      window.conferenceInit(this.params.room);
+	    }
+	  }]);
 
 	  return VideoPage;
 	}()) || _class);
