@@ -14,7 +14,7 @@ export class VideoPage {
     this.nav = nav;
     // If we navigated to this page, we will have an item available as a nav param
     this.selectedItem = navParams.get('item');
-    
+    window.conferenceInit();
   }
 
 }

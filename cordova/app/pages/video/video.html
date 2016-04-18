@@ -7,6 +7,22 @@
 </ion-navbar>
 
 <ion-content padding class="video">
-
-
+  <h3 id="title">Start a room</h3>
+  <form id="createRoom">
+      <input id="sessionInput"/>
+      <button disabled type="submit">Create it!</button>
+  </form>
+  <p id="subTitle"></p>
+  <div>
+    <button id="screenShareButton"></button>
+    (https required for screensharing to work)
+  </div>
+  <hr>
+  <div class="videoContainer">
+      <video id="localVideo" style="height: 150px;" oncontextmenu="return false;"></video>
+      <meter id="localVolume" class="volume" min="-45" max="-20" high="-25" low="-40"></meter>
+  </div>
+  <div id="localScreenContainer" class="videoContainer">
+  </div>
+  <div id="remotes"></div>
 </ion-content>
