@@ -4,7 +4,7 @@ import {DashboardPage} from './pages/dashboard/dashboard';
 import {FormsPage} from './pages/forms/forms';
 import {PhysicianLocatorPage} from './pages/physician/locator/search';
 import {PatientAppointmentPage} from './pages/patient/appointments/list';
-
+import {VideoPage} from './pages/video/video';
 
 @App({
   templateUrl: 'build/app.html',
@@ -29,6 +29,7 @@ class MyApp {
       { title: 'Appointments', component: PatientAppointmentPage },
       { title: 'Forms', component: FormsPage },
       { title: 'Find a Physician', component: PhysicianLocatorPage },
+      { title: 'Video', component: VideoPage }
     ];
 
     // make dashboard the root (or first) page
