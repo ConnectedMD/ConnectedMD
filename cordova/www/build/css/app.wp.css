@@ -8827,7 +8827,11 @@ body {
   background: -webkit-linear-gradient(top, #7ECECD 0%, #3AC5C4 100%) !important;
   background: linear-gradient(to bottom, #7ECECD 0%, #3AC5C4 100%) !important; }
   .wrapper .sidebar .sidebar-wrapper .logo {
-    min-height: 60px !important; }
+    min-height: 60px !important;
+    text-align: center;
+    vertical-align: middle !important;
+    padding-top: 15px;
+    font-size: 2rem; }
   .wrapper .sidebar .sidebar-wrapper .nav p {
     color: #fff !important; }
 
