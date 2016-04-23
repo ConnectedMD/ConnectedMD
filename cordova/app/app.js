@@ -4,7 +4,7 @@ import {DashboardPage} from './pages/dashboard/dashboard';
 import {FormsPage} from './pages/forms/forms';
 import {PhysicianLocatorPage} from './pages/physician/locator/search';
 import {PatientAppointmentPage} from './pages/patient/appointments/list';
-
+import {VideoPage} from './pages/video/video';
 
 @App({
   templateUrl: 'build/app.html',
@@ -25,10 +25,11 @@ class MyApp {
     // set our app's pages
     // TODO: diffrent menus for doctors and patients
     this.pages = [
-      { title: 'Dashboard', component: DashboardPage },
-      { title: 'Appointments', component: PatientAppointmentPage },
-      { title: 'Forms', component: FormsPage },
-      { title: 'Find a Physician', component: PhysicianLocatorPage },
+      { title: 'Dashboard', component: DashboardPage, params: {}, opt: {}},
+      { title: 'Appointments', component: PatientAppointmentPage, params: {}, opt: {} },
+      { title: 'Forms', component: FormsPage, params: {}, opt: {} },
+      { title: 'Find a Physician', component: PhysicianLocatorPage, params: {}, opt: {} },
+      { title: 'Video', component: VideoPage, params: {room: "test"}, opt: {animate:true} }
     ];
 
     // make dashboard the root (or first) page
@@ -48,6 +49,7 @@ class MyApp {
     this.menu.close();
     // navigate to the new page if it is not the current page
     let nav = this.app.getComponent('nav');
-    nav.setRoot(page.component);
+    //nav.push(page.component, page.params, page.opt );
+    nav.setRoot(page.component, page.params, page.opt );
   }
 }
