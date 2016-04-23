@@ -1,5 +1,7 @@
 
-<ion-navbar *navbar>
+<!-- Mobile View - Start - ---------------------------------------------------------------->
+
+<ion-navbar *navbar class="dashboard-mobile">
   <button menuToggle>
     <ion-icon name="menu"></ion-icon>
   </button>
@@ -8,7 +10,7 @@
   </ion-title>
 </ion-navbar>
 
-<div class="dash-nav-container">
+<div class="dash-nav-container dashboard-mobile">
     <div class="nav-container">
       <ul class="nav nav-icons" role="tablist">
           <li class="dash-tabs" [(class.active)]="item.active" *ngFor="#item of tabs">
@@ -22,7 +24,7 @@
     <hr style="background-color:rgba(111, 111, 111, 0.12);">
 </div>
 
-<ion-content padding class="dashboard-page">
+<ion-content padding class="dashboard-page dashboard-mobile">
   <ion-slides id="dashboard_slider" options="slideOptions" (change)="onSlideChanged(slides)">
       <ion-slide>
           <div class="dashboard-slide-content">
@@ -98,3 +100,224 @@
       </ion-slide>
     </ion-slides>
 </ion-content>
+<!-- Mobile View - End - ---------------------------------------------------------------->
+
+
+
+<!-- Web View - Start - ---------------------------------------------------------------->
+<div class="dashboard-web-container dashboard-web">
+    <div class="wrapper">
+        <div class="sidebar" data-color="blue" data-image="img/farm-bg.jpg">
+            <div class="sidebar-wrapper">
+                <div class="logo">
+                    <a href="" class="simple-text">
+                        Minerva
+                    </a>
+                </div>
+
+                <ul class="nav">
+                    <li class="active">
+                        <a href="">
+                            <i class="pe-7s-graph"></i>
+                            <p>Dashboard</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="pe-7s-user"></i>
+                            <p>Activity</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="pe-7s-note2"></i>
+                            <p>Appointments</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="pe-7s-news-paper"></i>
+                            <p>Forms</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="pe-7s-science"></i>
+                            <p>Settings</p>
+                        </a>
+                    </li>
+                    <!--<li>
+                        <a href="">
+                            <i class="pe-7s-search"></i>
+                            <p>Physician Search</p>
+                        </a>
+                    </li>-->
+                    <li>
+                        <a href="">
+                            <i class="pe-7s-bell"></i>
+                            <p>Notifications</p>
+                        </a>
+                    </li>
+                    <li class="active-pro">
+                        <a href="">
+                            <i class="pe-7s-rocket"></i>
+                            <p>Help</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    <div class="main-panel">
+        <nav class="navbar navbar-default navbar-fixed">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="navbar-brand" href="#">
+                        <i class="pe-7s-plugin"></i>
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <!--<ul class="nav navbar-nav navbar-left">
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-dashboard"></i>
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa fa-globe"></i>
+                                    <b class="caret"></b>
+                                    <span class="notification">5</span>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a href="#">Notification 1</a></li>
+                                <li><a href="#">Notification 2</a></li>
+                                <li><a href="#">Notification 3</a></li>
+                                <li><a href="#">Notification 4</a></li>
+                                <li><a href="#">Another notification</a></li>
+                              </ul>
+                        </li>
+                        <li>
+                           <a href="">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </li>
+                    </ul>-->
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <!--<li>
+                           <a href="">
+                               Account
+                            </a>
+                        </li>-->
+                        <!--<li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    Dropdown
+                                    <b class="caret"></b>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                              </ul>
+                        </li>-->
+                        <li>
+                            <a href="#">
+                                Log out
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 col-lg-4">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 class="title">Activity</h4>
+                            </div>
+                        </div>
+                        <hr class="title-underline">
+                        <div class="card" *ngFor="#activity of content.activities">
+                            <div class="header">
+                                <h5 class="title">{{activity.title}}</h5>
+                            </div>
+                            <div class="content">
+                                <div>{{activity.description}}</div>
+                                <div class="footer">
+                                    <hr>
+                                    <div class="stats">
+                                        <i class="fa fa-history"></i> Updated 10 mins ago
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 col-lg-4">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 class="title">Appointments</h4>
+                            </div>
+                        </div>
+                        <hr class="title-underline">
+                        <div class="card" *ngFor="#appointment of content.appointments">
+                            <div class="header">
+                                <h5 class="title">{{appointment.title}}</h5>
+                            </div>
+                            <div class="content">
+                                <div>{{appointment.description}}</div>
+                                <div class="footer">
+                                    <hr>
+                                    <div class="stats">
+                                        <i class="fa fa-clock-o"></i> {{appointment.time | date:'medium'}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-12 col-lg-4">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 class="title">Forms</h4>
+                            </div>
+                        </div>
+                        <hr class="title-underline">
+                        <div class="card" *ngFor="#form of content.forms">
+                            <div class="header">
+                                <h5 class="title">{{form.title}}</h5>
+                            </div>
+                            <div class="content">
+                                <div>{{form.practice}}</div>
+                                <div class="footer">
+                                    <hr>
+                                    <div class="stats">
+                                        <i class="fa fa-history"></i> {{form.recieved | date:'medium'}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+

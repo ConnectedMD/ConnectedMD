@@ -21,10 +21,14 @@
 // are different per mode.
 
 $colors: (
-  primary:    #fff,
+  primary:    #ffffff,
   secondary:  #71b0b1,
   danger:     #cb7671,
   light:      #ebebce,
   dark:       #bcbec2,
   favorite:   #69BB7B
 );
+
+$screen-small: 768px;
+$screen-medium: 992px;
+$screen-large:1200px;
