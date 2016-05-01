@@ -1,4 +1,5 @@
 import {App, IonicApp, Platform, MenuController} from 'ionic-angular';
+import {ScrollSpyService} from 'ng2-scrollspy';
 import {StatusBar} from 'ionic-native';
 import {DashboardPage} from './pages/dashboard/dashboard';
 import {FormsPage} from './pages/forms/forms';
