@@ -2,7 +2,7 @@
 
 
 // App Shared Imports
-// --------------------------------------------------
+// ----------------------------------------------------------
 // These are the imports which make up the design of this app.
 // By default each design mode includes these shared imports.
 // App Shared Sass variables belong in app.variables.scss.
@@ -30,5 +30,122 @@
         display: none !important;
     }
 }
+
+scroll-content{
+    overflow-y: auto;
+}
+
+/* ---------------------------------------------------
+ *  Side Nav 
+ * -------------------------------------------------*/
+ .nav-profile-area{
+     height: 200px !important;
+     background-color: map-get($colors, cmd-primary);
+     color: map-get($colors, cmd-text-nav);
+     display: flex;
+     flex-direction: column;
+     justify-content:center;
+     align-content: center;
+     
+     .profile-container{
+        margin: 0 auto;
+        text-align: center;
+         img{
+            max-width: 120px;
+            height: auto;
+            border: 2px solid map-get($colors, cmd-nav-background);
+            border-radius: 50px;
+            opacity: 0.65;
+         }
+     }
+ }
+ 
+ .side-nav-item.item{    
+     border-color: #ececec !important;
+     
+     .item-inner{
+         border-color: #ececec !important;
+         height: 65px;
+         color: map-get($colors, cmd-text-nav-profile);
+         
+         .nav-item-container{
+             
+             .nav-item-icon{
+                display: none !important;
+             }
+         }
+     }
+ }
+ 
+@media only screen 
+  and (min-width: $screen-large) {
+    
+    .nav-profile-area{
+        height: 250px !important;
+        background-color: map-get($colors, cmd-nav-background);
+        border-bottom: 1px solid #ececec;
+        
+        .profile-container{
+            color: map-get($colors, cmd-text-nav-profile);
+            
+            img{
+                border: 2px solid map-get($colors, cmd-text-nav-profile);
+            }
+        }
+    }
+    
+    .side-nav-item.item{    
+        border: none !important;
+        
+        .item-inner{
+            border: none !important;
+            background-image: none !important;
+            padding-left: 20px;
+            
+            .nav-item-container{
+                width: 50px;
+                
+                .nav-item-icon{
+                    display: block !important;
+                    margin-right: 20px !important;
+                    font-size: 2.5rem !important;
+                }
+            }
+            
+            .nav-item-label{
+                margin-top: 5px !important;
+            }
+            
+            ion-label{
+                display: flex !important;
+            }
+        }
+    }
+    
+    /*--- Ionic overrides to make sidenav visible on web - do not change--*/
+    .menu-content-reveal {
+        box-shadow: none !important;
+    }
+    
+    ion-menu{
+        -webkit-transform: none !important;
+        transform: none !important;
+        border-right: 1px solid #ececec;
+        z-index: 10;
+    }
+    
+    ion-page{
+        padding-left: 304px !important;
+    }
+    
+    //Hide the menu toggle - dont need it in web view
+    .bar-button-menutoggle{
+        display: none;
+    }
+    /*--------------------------------------------------------------------*/
+}
+ 
+
+
 
 

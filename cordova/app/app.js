@@ -1,5 +1,4 @@
 import {App, IonicApp, Platform, MenuController} from 'ionic-angular';
-import {ScrollSpyService} from 'ng2-scrollspy';
 import {StatusBar} from 'ionic-native';
 import {DashboardPage} from './pages/dashboard/dashboard';
 import {FormsPage} from './pages/forms/forms';
@@ -26,15 +25,17 @@ class MyApp {
     // set our app's pages
     // TODO: diffrent menus for doctors and patients
     this.pages = [
-      { title: 'Dashboard', component: DashboardPage, params: {}, opt: {}},
-      { title: 'Appointments', component: PatientAppointmentPage, params: {}, opt: {} },
-      { title: 'Forms', component: FormsPage, params: {}, opt: {} },
-      { title: 'Find a Physician', component: PhysicianLocatorPage, params: {}, opt: {} },
-      { title: 'Video', component: VideoPage, params: {room: "test"}, opt: {animate:true} }
+      { title: 'Dashboard', component: DashboardPage, params: {}, opt: {}, icon: 'pe-7s-home'},
+      { title: 'Appointments', component: PatientAppointmentPage, params: {}, opt: {}, icon: 'pe-7s-clock' },
+      { title: 'Forms', component: FormsPage, params: {}, opt: {}, icon: 'pe-7s-note2' },
+      { title: 'Find a Physician', component: PhysicianLocatorPage, params: {}, opt: {}, icon: 'pe-7s-search' },
+      { title: 'Video', component: VideoPage, params: {room: "test"}, opt: {animate:true}, icon: 'pe-7s-video' },
+      { title: 'Settings', params: {}, opt: {}, icon: 'pe-7s-tools' },
     ];
 
     // make dashboard the root (or first) page
     this.rootPage = DashboardPage;
+    this.menuType = window.cordova ? 'overlay' : 'reveal';
   }
 
   initializeApp() {
