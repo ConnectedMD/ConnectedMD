@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="<%=LANG%>">
 <head>
-   <meta charset="utf-8" />
-   <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0"/>
-   <link rel="icon" type="image/ico" href="/favicon.ico"/>
-   <title>ConnectedMD</title>
-   <link href="/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
-   <link href="/css/animate.min.css" rel="stylesheet"/>
-   <link href="/css/app.css" rel="stylesheet"/>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0"/>
+    <link rel="icon" type="image/ico" href="/favicon.ico"/>
+    <title>ConnectedMD</title>
+    <link href="/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/css/animate.min.css" rel="stylesheet"/>
+    <link href="/css/app.css" rel="stylesheet"/>
     <link href="/css/features.css" rel="stylesheet"/>
 
     <link href="/libs/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
@@ -28,8 +28,7 @@
                             <h1 class="splash-brand"><i class="pe-7s-plugin"></i></h1>
                             <!--<h1 class="splash-brand"><i class="fa fa-stethoscope fa-lg"></i></h1>-->
                         </div>
-                        <h1 class="login-brand">
-                            Minerva</h1>
+                        <h1 class="login-brand">Minerva</h1>
                         <hr class="login-hr" style="max-width: 40%;" />
                         <h6 class="login-brand-subtext center-block">Feel better &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;Live better</h6>
                         <br><br>
@@ -71,16 +70,19 @@
             <div class="login-form">
                 <div class="row">
                     <div class="col-md-12">
-                        <input type="email" class="form-control input-lg login-input" id="email" placeholder="Email">
+                        <input type="email" class="form-control input-lg login-input" id="email" placeholder="Email"/>
+                        <div id="emailError" class="error"></div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
                         <input type="password" class="form-control input-lg login-input" id="password" placeholder="Password">
+                        <div id="passwordError" class="error"></div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
+                        <div id="loginError" class="error"></div>
                         <button type="button" class="btn btn-primary btn-lg btn-block login-btn" onclick="login()">Sign in with Email</button>
                     </div>
                 </div>
@@ -109,13 +111,13 @@
         </div>
         <div class="signup-form">
             <div class="signup-input-box">
-                <input type="email" class="form-control input-lg signup-input" id="email" placeholder="Email" autocomplete="off">
+                <input type="email" class="form-control input-lg signup-input" id="registerEmail" placeholder="Email" autocomplete="off">
             </div>
             <div class="signup-input-box">
-                <input type="password" class="form-control input-lg signup-input" id="password" placeholder="Password">
+                <input type="password" class="form-control input-lg signup-input" id="registerPassword" placeholder="Password">
             </div>
             <div class="signup-input-box">
-                <input type="password" class="form-control input-lg signup-input" id="confirm_password" placeholder="Password Again">
+                <input type="password" class="form-control input-lg signup-input" id="registerConfirmPassword" placeholder="Password Again">
             </div>
             <div class="signup-submit-box">
                 <button class="btn btn-success btn-fill btn-lg signup-btn-submit">Sign up with Email</button>
@@ -136,7 +138,7 @@
       </div>
       <div class="signup-form">
           <div class="signup-input-box">
-              <input id="forgotPasswordEmail" type="email" class="form-control input-lg signup-input" id="email" placeholder="Email" autocomplete="off">
+              <input id="forgotPasswordEmail" type="email" class="form-control input-lg signup-input" id="forgotEmail" placeholder="Email" autocomplete="off">
           </div>
           <div class="signup-submit-box">
               <button id="reset_password" class="btn btn-success btn-fill btn-lg signup-btn-submit">Send Reset Email</button>
@@ -248,7 +250,7 @@
        </div>
        <div class="signup-form">
            <div class="signup-input-box">
-               <input id="resetpassword" type="password" class="form-control input-lg signup-input" id="email" placeholder="New Password" autocomplete="off">
+               <input id="resetpassword" type="password" class="form-control input-lg signup-input" id="changeEmail" placeholder="New Password" autocomplete="off">
            </div>
            <div class="signup-submit-box">
                <button id="save_password" class="btn btn-success btn-fill btn-lg signup-btn-submit">Reset Password</button>
@@ -271,7 +273,8 @@
            if (event.which == 13) { login(); }
         });
         baseAPI = "<%=API%>";
-        //createCookie("TOKEN", "", -1);
+        if (baseAPI == "<%=API%>") {baseAPI = "http://localhost:8080/"}
+        createCookie("TOKEN", "", -1);
         $("#password").on("keypress click focus blur", function (e) { checkCapsLock(e, $("#login .capsLockMsg")); });
         $("#registerPassword").on("keypress click focus blur", function (e) { checkCapsLock(e, $("#register .capsLockMsg")); });
         $("#registerConfirmPassword").on("keypress click focus blur", function (e) { checkCapsLock(e, $("#register .capsLockMsg")); });
@@ -319,45 +322,47 @@
            $("#changePassword").hide();
            $("#"+panel).show("fast");
         };
-      var login = function () {
-         $("#loginError").html("");
-         $("#emailError").html("");
-         $("#passwordError").html("");
-         createCookie("TOKEN", "TEST", 1);
-         document.location.href = "/app.html";
-      };
-         var loginFull = function () {
-           $("#loginError").html("");
-           $("#emailError").html("");
-           $("#passwordError").html("");
-           var ok = true;
-           if (!validateEmail($("#email").val())) { ok = false; $("#emailError").html("Invalid Email Address."); }
-           if ($("#password").val().length <= 3) { ok = false; $("#passwordError").html("Password Required."); }
-           if (ok) {
-              $.ajax({crossDomain: true, dataType: "json", method: "POST", url: baseAPI + "login", data: { "email": $("#email").val(), "password": $("#password").val() } })
-                 .error(function(result) {
-                    if (result.responseJSON) {
-                       if (result.responseJSON.error) {
-                          $("#loginError").html(result.responseJSON.error);
-                       } else {
-                          $("#loginError").html(result.responseText);
-                       }
-                    } else {
-                       $("#loginError").html("Email or Password Invalid.");
-                    }
-                 })
-                 .done(function(data) {
-                    if (data.error) {
-                       $("#loginError").html(data.error);
-                    } else if (data.token !== null && data.token !== "") {
-                       createCookie("TOKEN", data.token, 1);
-                       document.location.href = "/";
-                    } else {
-                       $("#loginError").html("Token Invalid.");
-                    }
-                 })
-              ;
-           }
+        var loginSkip = function () {
+            $("#loginError").html("");
+            $("#emailError").html("");
+            $("#passwordError").html("");
+            createCookie("TOKEN", "TEST", 1);
+            document.location.href = "/app.html";
+        };
+        var login = function () {
+            $("#loginError").html("");
+            $("#emailError").html("");
+            $("#passwordError").html("");
+            var ok = true;
+            if (!validateEmail($("#email").val())) { ok = false; $("#emailError").html("Invalid Email Address."); }
+            if ($("#password").val().length <= 3) { ok = false; $("#passwordError").html("Password Required."); }
+            if (ok) {
+                $.ajax({crossDomain: true, dataType: "json", method: "POST", url: baseAPI + "login", data: { "email": $("#email").val(), "password": $("#password").val() } })
+                    .error(function(result) {
+                        console.log("Login Error:",result);
+                        if (result.responseJSON) {
+                            if (result.responseJSON.error) {
+                                $("#loginError").html(result.responseJSON.error);
+                            } else {
+                                $("#loginError").html(result.responseText);
+                            }
+                        } else {
+                            $("#loginError").html("Email or Password Invalid.");
+                        }
+                    })
+                    .done(function(data) {
+                        if (data.error) {
+                        console.log("Login Response:",data.error);
+                            $("#loginError").html(data.error);
+                        } else if (data.token !== null && data.token !== "") {
+                            createCookie("TOKEN", data.token, 1);
+                            document.location.href = "/app.html";
+                        } else {
+                            $("#loginError").html("Token Invalid.");
+                        }
+                    })
+                ;
+            }
         };
         var forgotPassword = function () {
            if (validateEmail($("#forgotPasswordEmail").val()) ) {
@@ -375,76 +380,75 @@
            }
         }
         var register = function() {
-              $("#registerError").html("");
-              var ok = true;
-              var registerEmail = $("#registerEmail").val();
-              var registerFirstName = $("#registerFirstName").val();
-              var registerLastName = $("#registerLastName").val();
-              var registerPassword = $("#registerPassword").val();
-              var registerConfirmPassword = $("#registerConfirmPassword").val();
-              if (registerPassword !== registerConfirmPassword) { ok = false; }
-              if (!validateEmail(registerEmail)) { ok = false; }
-              if (registerFirstName.length <= 1) { ok = false; }
-              if (registerFirstName.length <= 1) { ok = false; }
-              if (ok) {
-                 $.ajax({crossDomain: true, dataType: "json", method: "POST", url: baseAPI + "signup",
-                    data: {
-                          "email": registerEmail,
-                          "firstname": registerFirstName,
-                          "lastname": registerLastName,
-                          "password": registerPassword,
-                          "confirmPassword": registerConfirmPassword
-                    }})
-                    .error(function(result) {
-                          console.log(result);
-                          $("#registerError").html("Sigup Failed with error");
-                    })
-                    .done(function(data) {
-                          if (data.error) {
-                             $("#registerError").html(data.error);
-                          } else {
-                             if (data.accountCreated === "true") {
-                                alert("Signup Complete.\nProceed to login.");
-                                document.location.href = "/";
-                             }
-                             $("#registerError").html("Sigup Failed");
-                          }
-                    })
-                 ;
-              } else {
-                 $("#registerError").html("All fields required.");
-              }
+            $("#registerError").html("");
+            var ok = true;
+            var registerEmail = $("#registerEmail").val();
+            var registerFirstName = $("#registerFirstName").val();
+            var registerLastName = $("#registerLastName").val();
+            var registerPassword = $("#registerPassword").val();
+            var registerConfirmPassword = $("#registerConfirmPassword").val();
+            if (registerPassword !== registerConfirmPassword) { ok = false; }
+            if (!validateEmail(registerEmail)) { ok = false; }
+            if (registerFirstName.length <= 1) { ok = false; }
+            if (registerFirstName.length <= 1) { ok = false; }
+            if (ok) {
+                $.ajax({crossDomain: true, dataType: "json", method: "POST", url: baseAPI + "signup",
+                data: {
+                    "email": registerEmail,
+                    "firstname": registerFirstName,
+                    "lastname": registerLastName,
+                    "password": registerPassword,
+                    "confirmPassword": registerConfirmPassword
+                }})
+                .error(function(result) {
+                    console.log(result);
+                    $("#registerError").html("Sigup Failed with error");
+                })
+                .done(function(data) {
+                    if (data.error) {
+                        $("#registerError").html(data.error);
+                    } else {
+                        if (data.accountCreated === "true") {
+                        alert("Signup Complete.\nProceed to login.");
+                        document.location.href = "/";
+                        }
+                        $("#registerError").html("Sigup Failed");
+                    }
+                })
+                ;
+            } else {
+                $("#registerError").html("All fields required.");
+            }
         };
         var changePassword = function () {
-              ok = true;
-              var changeNewPassword = $("#changeNewPassword").val();
-              var changeConfirmPassword = $("#changeConfirmPassword").val();
-              if (changeNewPassword == "") { ok = false; }
-              if (changeConfirmPassword == "") { ok = false; }
-              if (changeNewPassword !== changeConfirmPassword) { ok = false; }
-              if (ok) {
-                 $.ajax({crossDomain: true, dataType: "json", method: "POST", url: baseAPI + "updatePassword",
-                    data: {
-                          "token": getUrlParameter("token"),
-                          "password": changeNewPassword
-                    }})
-                    .error(function(result) {
-                          console.log(result.responseJSON);
-                          $("#changePasswordError").html("Error Resetting Password");
-                    })
-                    .done(function(data) {
-                          console.log(data);
-                          if (data.error) {
-                             $("#changePasswordError").html(data.error);
-                          } else {
-                             alert("Password changed.");
-                             document.location.href = "/";
-                          }
-                    })
-                 ;
-              } else {
-                 $("#changePasswordError").html("Password does not match");
-              }
+            ok = true;
+            var changeNewPassword = $("#changeNewPassword").val();
+            var changeConfirmPassword = $("#changeConfirmPassword").val();
+            if (changeNewPassword == "") { ok = false; }
+            if (changeConfirmPassword == "") { ok = false; }
+            if (changeNewPassword !== changeConfirmPassword) { ok = false; }
+            if (ok) {
+                $.ajax({crossDomain: true, dataType: "json", method: "POST", url: baseAPI + "updatePassword",
+                data: {
+                    "token": getUrlParameter("token"),
+                    "password": changeNewPassword
+                }})
+                .error(function(result) {
+                    console.log(result.responseJSON);
+                    $("#changePasswordError").html("Error Resetting Password");
+                })
+                .done(function(data) {
+                    console.log(data);
+                    if (data.error) {
+                        $("#changePasswordError").html(data.error);
+                    } else {
+                        alert("Password changed.");
+                        document.location.href = "/";
+                    }
+                });
+            } else {
+                $("#changePasswordError").html("Password does not match");
+            }
         };
         var validateEmail = function(email) {
            if (email.length == 0) return false;
@@ -462,17 +466,17 @@
         };
         if (getUrlParameter("token") != undefined) { showPanel("changePassword"); }
 
-      function getCookie(name) { return (name = (document.cookie + ';').match(new RegExp(name + '=.*;'))) && name[0].split(/=|;/)[1]; }
+        function getCookie(name) { return (name = (document.cookie + ';').match(new RegExp(name + '=.*;'))) && name[0].split(/=|;/)[1]; }
 
-      function createCookie(name,value,days) {
-         var expires = "";
-         if (days) {
-            var date = new Date();
-            date.setTime(date.getTime()+(days*24*60*60*1000));
-            expires = "; expires="+date.toGMTString();
-         }
-         document.cookie = name+"="+value+expires+"; path=/";
-      }
-   </script>
+        function createCookie(name,value,days) {
+            var expires = "";
+            if (days) {
+                var date = new Date();
+                date.setTime(date.getTime()+(days*24*60*60*1000));
+                expires = "; expires="+date.toGMTString();
+            }
+            document.cookie = name+"="+value+expires+"; path=/";
+        }
+    </script>
 </body>
 </html>
