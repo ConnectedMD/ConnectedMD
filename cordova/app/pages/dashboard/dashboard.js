@@ -12,9 +12,9 @@ export class DashboardPage {
   constructor(nav, navParams) {
     this.nav = nav;
     this.tabs = [
-      { name: 'Activity', index: 0, iconClass:'pe-7s-hourglass', active:true},
-      { name: 'Appointments', index: 1, iconClass:'pe-7s-clock', active:false },
-      { name: 'Forms', index: 2, iconClass:'pe-7s-note2', active:false }
+      { id: '#activity', name: 'Activity', index: 0, iconClass:'pe-7s-hourglass', active:true},
+      { id: '#appointments', name: 'Appointments', index: 1, iconClass:'pe-7s-clock', active:false },
+      { id: '#forms', name: 'Forms', index: 2, iconClass:'pe-7s-note2', active:false }
     ]
 
     this.slideOptions = {
@@ -100,12 +100,28 @@ export class DashboardPage {
   };
   
   setActiveTab(event, item, switchSlide){
-    this.tabs.forEach(tab => { tab.active = false; });
-    let selectedTab = this.tabs.filter(sel => { return sel.index === item.index; });
-    if(selectedTab && selectedTab.length > 0 ){ selectedTab[0].active = true; this.switchSlide(item.index);  }
+    
+    let activeTab = this.tabs.filter(sel => { return sel.active === true; });
+    
+    if(activeTab && activeTab[0].index != item.index){
+      this.tabs.forEach(tab => { tab.active = false; });
+      let selectedTab = this.tabs.filter(sel => { return sel.index === item.index; });
+      if(selectedTab && selectedTab.length > 0 ){ selectedTab[0].active = true; this.scrollToSlide(selectedTab[0].id); /*this.switchSlide(item.index);*/  }
+    }
   };
   
   /* Methods */
+  scrollToSlide(slideId){
+    let target = $(slideId);
+    //alert(target.position().top);
+    if (target) {
+      $('scroll-content').animate({
+        scrollTop: (target.position().top)
+      }, 500);
+      return false;
+    }
+  }
+  
   switchSlide(index){
     let slider = document.querySelector('.swiper-container').swiper; //based off of the swiper jquery plugin http://idangero.us/swiper/api/#.VxPN_DArKUk
     slider.slideTo(index);

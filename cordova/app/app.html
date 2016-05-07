@@ -1,17 +1,20 @@
-<ion-menu [content]="content" type="overlay" persistent="true">
-
-  <ion-toolbar>
-    <ion-title>Pages</ion-title>
-  </ion-toolbar>
-
+<ion-menu [content]="content" type="{{menuType}}" persistent="true">
+  <div class="nav-profile-area">
+    <div class="profile-container">
+      <img src="img/me.jpg" />
+      <h4>Michael Onubogu</h4>
+      <span><i class="pe-7s-map-marker"></i>&nbsp;Atlanta, GA</span>
+    </div>
+  </div>
+  
   <ion-content>
     <ion-list>
-      <button ion-item *ngFor="#p of pages" (click)="openPage(p)">
-        {{p.title}}
+      <button class="side-nav-item" ion-item *ngFor="#p of pages" (click)="openPage(p)">
+        <span class="nav-item-container"><i class="nav-item-icon {{p.icon}}"></i></span>
+        <span class="nav-item-label">{{p.title}}</span>
       </button>
     </ion-list>
   </ion-content>
-
 </ion-menu>
 
 <ion-nav id="nav" [root]="rootPage" #content swipe-back-enabled="false"></ion-nav>

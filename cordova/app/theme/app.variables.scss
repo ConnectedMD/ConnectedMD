@@ -26,9 +26,67 @@ $colors: (
   danger:     #cb7671,
   light:      #ebebce,
   dark:       #bcbec2,
-  favorite:   #69BB7B
+  favorite:   #69BB7B,
+  
+  cmd-primary: #7ECECD,
+  cmd-nav-background: #ffffff,
+  cmd-accent-1: #23CCEF,
+  cmd-text: #a0a0a0,
+  cmd-text-nav: #ffffff,
+  cmd-text-faded: #cdcdcd,
+  cmd-text-nav-profile: #5B9493,
+  
+  cmd-text-card-header: #07569C
 );
 
 $screen-small: 768px;
 $screen-medium: 992px;
 $screen-large:1200px;
+
+/* ===========================================================
+ * ===========================================================
+ *      IONIC OVERRIDES
+ * ===========================================================
+ * ==========================================================*/
+
+// Navbar
+//-------------------------------------------------------------
+$toolbar-ios-height: 60px;
+$toolbar-md-height: 60px;
+$toolbar-wp-height: 60px;
+
+$toolbar-background: map-get($colors, cmd-primary);
+$toolbar-border-color: map-get($colors, cmd-primary);
+$toolbar-text-color: map-get($colors, cmd-text-nav);
+
+.toolbar-title{
+    font-size: 3.5rem !important;
+    padding-top: 7px;
+}
+
+@media only screen 
+  and (min-width: $screen-small) {
+    
+    $toolbar-ios-height: 70px;
+    $toolbar-md-height: 70px;
+    $toolbar-wp-height: 70px;
+}
+//-------------------------------------------------------------
+
+
+// Side Menu
+//-------------------------------------------------------------
+$menu-ios-background: map-get($colors, cmd-primary);
+$menu-md-background: map-get($colors, cmd-primary);
+$menu-wp-background: map-get($colors, cmd-primary);
+
+
+@media only screen 
+  and (min-width: $screen-large) {
+    $menu-ios-background: map-get($colors, cmd-nav-background);
+    $menu-md-background: map-get($colors, cmd-nav-background);
+    $menu-wp-background: map-get($colors, cmd-nav-background);
+}
+//-------------------------------------------------------------
+
+
