@@ -45,3 +45,6 @@ cordova/platforms
 .vs/**
 .vs/*.*
 .idea/workspace.xml
+
+#ionic serve ignore build
+cordova/www/build
