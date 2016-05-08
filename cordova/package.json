@@ -1,4 +1,6 @@
 {
+  "name": "connectedmd",
+  "description": "Connected.MD: Web And Mobile",
   "dependencies": {
     "angular2": "2.0.0-beta.15",
     "es6-shim": "^0.35.0",
@@ -32,8 +34,6 @@
     "ionic-native": "*",
     "strip-sourcemap-loader": "0.0.1"
   },
-  "name": "connectedmd",
-  "description": "Connected.MD: Web And Mobile",
   "cordovaPlugins": [
     "cordova-plugin-device",
     "cordova-plugin-console",
@@ -48,5 +48,8 @@
       "platform": "android",
       "locator": "windows"
     }
-  ]
+  ],
+  "scripts": {
+    "postinstall":"gulp build"
+  }
 }
