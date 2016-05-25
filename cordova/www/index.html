@@ -273,7 +273,7 @@
            if (event.which == 13) { login(); }
         });
         baseAPI = "<%=API%>";
-        if (baseAPI == "<%=API%>") {baseAPI = "http://localhost:8080/"}
+        if (baseAPI == "<%=API%>") {baseAPI = "http://qaapi.connected.md/"}
         createCookie("TOKEN", "", -1);
         $("#password").on("keypress click focus blur", function (e) { checkCapsLock(e, $("#login .capsLockMsg")); });
         $("#registerPassword").on("keypress click focus blur", function (e) { checkCapsLock(e, $("#register .capsLockMsg")); });
