@@ -9,7 +9,7 @@
   
   <ion-content>
     <ion-list>
-      <button class="side-nav-item" ion-item *ngFor="#p of pages" (click)="openPage(p)">
+      <button class="side-nav-item" ion-item *ngFor="let p of pages" (click)="openPage(p)">
         <span class="nav-item-container"><i class="nav-item-icon {{p.icon}}"></i></span>
         <span class="nav-item-label">{{p.title}}</span>
       </button>

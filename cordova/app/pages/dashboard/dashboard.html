@@ -10,7 +10,7 @@
 <div class="dash-nav-container mobile-only">
     <div class="nav-container">
       <ul class="nav nav-icons" role="tablist">
-          <li class="dash-tabs" [(class.active)]="item.active" *ngFor="#item of tabs">
+          <li class="dash-tabs" [(class.active)]="item.active" *ngFor="let item of tabs">
               <a role="tab" data-toggle="tab" (click)="setActiveTab($event, item)">
                   <i class="{{item.iconClass}} dash-icon"></i><br> 
                   {{item.name}}
@@ -33,7 +33,7 @@
                             </div>
                         </div>
                         <hr class="title-underline">
-                        <div class="card" *ngFor="#activity of content.activities">
+                        <div class="card" *ngFor="let activity of content.activities">
                             <div class="header">
                                 <h5 class="title">{{activity.title}}</h5>
                             </div>
@@ -56,7 +56,7 @@
                             </div>
                         </div>
                         <hr class="title-underline">
-                        <div class="card" *ngFor="#appointment of content.appointments">
+                        <div class="card" *ngFor="let appointment of content.appointments">
                             <div class="header">
                                 <h5 class="title">{{appointment.title}}</h5>
                             </div>
@@ -79,7 +79,7 @@
                             </div>
                         </div>
                         <hr class="title-underline">
-                        <div class="card" *ngFor="#form of content.forms">
+                        <div class="card" *ngFor="let form of content.forms">
                             <div class="header">
                                 <h5 class="title">{{form.title}}</h5>
                             </div>
